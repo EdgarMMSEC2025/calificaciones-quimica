@@ -1,0 +1,10066 @@
+[
+  {
+    "boleta": "2026320395",
+    "nombre": "AREVALO ALCALA DYLAN EDUARDO",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 30,
+      "labexp": 20,
+      "bitacora": 50,
+      "ptosext": 0,
+      "calificacion": 100
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026321205",
+    "nombre": "GARCIA ALCANTARA JESUS",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320626",
+    "nombre": "GAYOSO REYES EMILIO NAHUM",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320909",
+    "nombre": "GONZALEZ AREVALO ELIAS",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320862",
+    "nombre": "GONZALEZ DE LA ROSA ALONSO",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320494",
+    "nombre": "GONZALEZ RAMIREZ ABRIL",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320698",
+    "nombre": "MENDEZ SALINAS JOSUE SEBASTIAN",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026321032",
+    "nombre": "HERNANDEZ HERNANDEZ ANUAR YAHIR",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026321102",
+    "nombre": "HUERTA OROPEZA JESUS EDUARDO",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320858",
+    "nombre": "JIMENEZ AVILA ANGEL SEBASTIAN",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320343",
+    "nombre": "MENDOZA CISNEROS MIGUEL ANGEL",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026321122",
+    "nombre": "LOPEZ ALVAREZ IRLANDA KARIME",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026321044",
+    "nombre": "LOPEZ GALLARDO MARIA FERNANDA",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320842",
+    "nombre": "LOPEZ HURTADO DANA PAOLA",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320760",
+    "nombre": "MARTINEZ BAUTISTA JUAN FRANCISCO",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321154",
+    "nombre": "MENDEZ GONZALEZ ANGEL ISAAC",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320343",
+    "nombre": "MENDOZA CISNEROS MIGUEL ANGEL",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321067",
+    "nombre": "AVELINO OSORIO YHUL YAHEL",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321127",
+    "nombre": "SOLIS NESTA EIBAR YAMIL",
+    "grupo": "1PM12",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320398",
+    "nombre": "AGUILAR FLORES JOSUE FRANCISCO",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320449",
+    "nombre": "AVILA LOZANO DANNA VALERIA",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321187",
+    "nombre": "BARRIENTOS NICOLAS MARIA FERNANDA",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320844",
+    "nombre": "BERMEJO RAMOS EMMILY",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320077",
+    "nombre": "BERTAUD NAVA NELLY JAZMIN",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320183",
+    "nombre": "CALIHUA ROJAS DIEGO",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320037",
+    "nombre": "CASANOVA REVILLA EVELYN DANAE",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320152",
+    "nombre": "CASTA�EDA FLORES LESLIE ANAI",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320677",
+    "nombre": "CEDILLO FLORES JONATHAN SANTIAGO",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320019",
+    "nombre": "DAVILA LEON MIGUEL ANGEL",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320564",
+    "nombre": "DORANTES CASTA�EDA ALEXIS",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320205",
+    "nombre": "GALINDO LOPEZ MARGARITA",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320080",
+    "nombre": "GARCIA AGUSTIN MIRIAM",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320072",
+    "nombre": "GONZALEZ MORAN YAQUELIN MICAELA",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320234",
+    "nombre": "GRANADOS ALDANA CARLOS ANDREE",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320700",
+    "nombre": "HERNANDEZ MALDONADO CARLOS ABRAHAM",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320153",
+    "nombre": "HERNANDEZ MARTINEZ JACQUELINE",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320389",
+    "nombre": "JIMENEZ CARRILLO AZUL",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320406",
+    "nombre": "RAMIREZ MATA CYNTHIA LIZBETH",
+    "grupo": "1IM26",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320285",
+    "nombre": "AGUILAR RIVERA HECTOR",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320399",
+    "nombre": "ARAUJO PEREZ ESTEBAN KAHERI",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320703",
+    "nombre": "AYALA SAMOS JOSE MARIA",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320502",
+    "nombre": "CASTILLO NAJERA MANUEL",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320474",
+    "nombre": "CHALICO MENDEZ CRISTIAN",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320361",
+    "nombre": "CORTES TELLEZ JYMI ALEXANDER",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320438",
+    "nombre": "DIAZ MOLAR SEBASTIAN",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320274",
+    "nombre": "DORANTES RESENDIZ FRANCISCO URIEL",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320781",
+    "nombre": "ESCOBEDO UGALDE NEYZER SANTIAGO",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320519",
+    "nombre": "ESPINOSA ADAYA ANGEL JOSUE",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320441",
+    "nombre": "ESTEBAN CRUZ ARUMI MAUREEN",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321113",
+    "nombre": "GALLARDO HERNANDEZ EMMANUEL",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320203",
+    "nombre": "GANTE MENDEZ ELLIOTH ISAI",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320439",
+    "nombre": "GARCIA PACHECO ORLANDO",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320826",
+    "nombre": "GOMEZ AGUILAR FELIX GABRIEL",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321044",
+    "nombre": "GONZALEZ BORJA ANGEL ALEXIS",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320954",
+    "nombre": "GUTIERREZ GONZALEZ YERAY JAASIEL",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320423",
+    "nombre": "HERNANDEZ HERNANDEZ YAEL ISAAC",
+    "grupo": "1MM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320127",
+    "nombre": "ALVARADO GUZMAN ERICK",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320430",
+    "nombre": "AVENDA�O JIMENEZ DIEGO ALEXIS",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320584",
+    "nombre": "CABRERA PEREZ ATZIN XOCHIQUETZALLI",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320550",
+    "nombre": "CARRASCO ALFARO GABRIELA",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320159",
+    "nombre": "DEGOLLADO SANCHEZ KARINA",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320400",
+    "nombre": "DEL RAZO CONTRERAS LEILANI",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320360",
+    "nombre": "DEL RIO SALGADO ASTRITH CELESTE",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320092",
+    "nombre": "ECHEVARRIA ZARI�ANA AQUILES OSHUN YOMI",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320972",
+    "nombre": "FLORES MARTINEZ DANIEL",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320579",
+    "nombre": "GARCIA CRUZ ANTONIO",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320624",
+    "nombre": "GOMEZ SAAVEDRA CHRISTIAN ALEJANDRO",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321107",
+    "nombre": "GONZALEZ BAUTISTA DIEGO ALEXANDER",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320533",
+    "nombre": "GUTIERREZ HERNANDEZ AXEL ADRIEL",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320180",
+    "nombre": "GUZMAN JUAREZ HEGEL ALEXIS",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320194",
+    "nombre": "HERNANDEZ ALBOR JIMENA ARACELI",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320811",
+    "nombre": "HERNANDEZ ALVAREZ URIEL ALEJANDRO",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320625",
+    "nombre": "HERNANDEZ DIEGO EMILY ADILE",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320685",
+    "nombre": "HERNANDEZ ZAMARRIPA ILEANA",
+    "grupo": "1IM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320892",
+    "nombre": "ARENALES MEDINA FERNANDA MAYLIN",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320069",
+    "nombre": "AVI�A MARTINEZ JORGE DANIEL",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320652",
+    "nombre": "BOLA�OS IBARRA ANA PAOLA",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320430",
+    "nombre": "BOTELLO LANDEROS LUIS ALBERTO",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320065",
+    "nombre": "BURGUETE PEREZ VALERIA VIANNEY",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320091",
+    "nombre": "CALVA PRIETO VANESSA",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320736",
+    "nombre": "CAMPOS GORDIANO RUBI AMAYRANI",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320647",
+    "nombre": "CHAVEZ BENITEZ TANIA",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320570",
+    "nombre": "CLEMENTE BARRIENTOS RICARDO",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320263",
+    "nombre": "FLORES OJEDA SHAINA DEL CARMEN",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320283",
+    "nombre": "FRIAS BRIONES ELIAM EMILIANO",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320094",
+    "nombre": "GABRIEL PEREZ EVELYN MAGDALENA",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320670",
+    "nombre": "GALLEGOS RODRIGUEZ JESUS DANIEL",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320133",
+    "nombre": "GALLEGOS SALAMANCA KARLA STEPHANI",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320134",
+    "nombre": "GARCIA FLORES ABDIEL DANIEL",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320168",
+    "nombre": "GODINEZ ROJAS JUAN JESUS",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320283",
+    "nombre": "GONZALEZ TORRES LUIS ANDRES",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321073",
+    "nombre": "HERNANDEZ OLMOS SHARON AYELEN",
+    "grupo": "1IM22",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320017",
+    "nombre": "AGUIRRE ZU�IGA LUNA PAOLA",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320576",
+    "nombre": "ALDANA HERNANDEZ CARLOS ALFREDO",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320217",
+    "nombre": "ALVA CARDENAS EDWIN",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320157",
+    "nombre": "AVILA NAVA SAUL",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320016",
+    "nombre": "BALBUENA CORTES GERARDO",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320188",
+    "nombre": "BALDERAS BLANCAS GERARDO SAUL",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320008",
+    "nombre": "CERVANTES OROZCO LUIS FELIPE",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320620",
+    "nombre": "CORDOVA PEREZ NATALIA",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320731",
+    "nombre": "CRUZ GARCIA KARLA YOLATL",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320018",
+    "nombre": "DUE�AS ESCOBEDO OSCAR YOEL",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320035",
+    "nombre": "FLORES CASTRO AXEL DAVID",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320351",
+    "nombre": "HERNANDEZ GOMEZ EVELYN YAMILE",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321101",
+    "nombre": "HERNANDEZ PRADO LIZET GUADALUPE",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320048",
+    "nombre": "JUAREZ DIAZ JAQUELINE",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320216",
+    "nombre": "MARTINEZ HERNANDEZ MARIANA",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320775",
+    "nombre": "MARTINEZ MORENO ROGELIO",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320401",
+    "nombre": "MONTA�O ANDRES ALFONSO ARTURO",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320947",
+    "nombre": "MONTIEL VARGAS IAN",
+    "grupo": "1IM24",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321058",
+    "nombre": "ALCANTARA HERNANDEZ KARIM",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320202",
+    "nombre": "APOLONIO TELLEZ JUAN CARLOS",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024320102",
+    "nombre": "BENITES PEREZ GUSTAVO AARON",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321020",
+    "nombre": "BERNAL PALACIOS OMAR ALEJANDRO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2023321022",
+    "nombre": "DE LA TORRE OLIVARES JERONIMO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320419",
+    "nombre": "CABALLERO HUERTA SEBASTIAN",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320311",
+    "nombre": "CERNA RODRIGUEZ FERNANDO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2024321135",
+    "nombre": "DE JESUS MOLINA JONATHAN EMMANUEL",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2014080078",
+    "nombre": "APONTE MU�OZ ABEL",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320472",
+    "nombre": "DIAZ CANTERO JOSE MARIA",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320590",
+    "nombre": "FIGUEROA BADILLO LIZETH",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320433",
+    "nombre": "GONZALEZ VILLAMAR RENATA",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320932",
+    "nombre": "MONTIEL VAZQUEZ ITZEL JAZMIN",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320636",
+    "nombre": "GUTIERREZ LEYBON SEBASTIAN SAMAEL",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320405",
+    "nombre": "HERNANDEZ AGUILAR VALERIA",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320459",
+    "nombre": "IBARRA ROJAS JORGE",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321106",
+    "nombre": "VALVERDE SANDATE GUSTAVO JAVIER",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320463",
+    "nombre": "LEONIDES FONSECA MANUEL ALBERTO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025321029",
+    "nombre": "MARTINEZ CALDERON JANCARLO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320386",
+    "nombre": "MARTINEZ DE LA LUZ JORGE ALBERTO",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320568",
+    "nombre": "MI�ON MENDEZ SHAMED JARED",
+    "grupo": "1MM21",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320292",
+    "nombre": "AGUILAR PEREZ VANIA LIZETH",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320210",
+    "nombre": "ARANDA OVIEDO ITZEL NAYELI",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320054",
+    "nombre": "ASCENCIO AGUIRRE DULCE MARIA",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320058",
+    "nombre": "BOJORGES ZACARIAS MAGALI JOCELYN",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320464",
+    "nombre": "BUSTOS ROJO EDGAR ISAAC",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320072",
+    "nombre": "CRUZ RAMIREZ CARLOS DANIEL",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320648",
+    "nombre": "CRUZ RUIZ XIMENA ITZEL",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320645",
+    "nombre": "FLORES ROA VALERIA",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320272",
+    "nombre": "HERNANDEZ ELIZONDO ANGEL GABRIEL",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320664",
+    "nombre": "HERNANDEZ PEREZ MIGUEL DENILSON",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320099",
+    "nombre": "HERRERA NARANJO JOSE NAHIN",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320361",
+    "nombre": "HUITRON NOVA ALEXIS ARMANDO",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320664",
+    "nombre": "JIMENEZ HERNANDEZ DIEGO ROGELIO",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320073",
+    "nombre": "JUAREZ VEGA ANA PAULA",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320535",
+    "nombre": "JUAREZ ZARATE. BRENDA RAQUEL",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2025320810",
+    "nombre": "LOPEZ CORTES NORMA ITZEL",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  },
+  {
+    "boleta": "2026320607",
+    "nombre": "LOPEZ ROJAS LESLIE MARCELA",
+    "grupo": "1IM29",
+    "p1": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p2": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p3": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p4": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p5": {
+      "actprev": 0,
+      "labexp": 20,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 20
+    },
+    "p6": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p7": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p8": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    },
+    "p9": {
+      "actprev": 0,
+      "labexp": 0,
+      "bitacora": 0,
+      "ptosext": 0,
+      "calificacion": 0
+    }
+  }
+]
