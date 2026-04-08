@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones | Lab. de Química</title>
+    <!-- Tailwind CSS para el diseño responsivo y UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js para los gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        // Configuración de colores de Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academico: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 min-h-screen flex flex-col">
+
+    <!-- Encabezado -->
+    <header class="bg-academico-900 text-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center gap-4 mb-4 md:mb-0">
+                <!-- Imagen relacionada al laboratorio -->
+                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-academico-100 bg-white flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Laboratorio de Química" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Laboratorio de Fundamentos de Química y Soluciones</h1>
+                    <p class="text-academico-100 text-sm md:text-base opacity-90">Portal de Consulta de Calificaciones</p>
+                </div>
+            </div>
+            <div class="text-3xl text-academico-100 opacity-50">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-6xl mx-auto w-full px-4 py-8">
+        
+        <!-- Tarjeta de Búsqueda -->
+        <section class="glass-effect rounded-2xl shadow-xl p-6 md:p-8 mb-8 border border-slate-200">
+            <div class="flex justify-between items-center mb-6 border-b pb-2">
+                <h2 class="text-xl font-semibold text-slate-800">
+                    <i class="fa-solid fa-magnifying-glass mr-2 text-academico-600"></i> Buscar Estudiante
+                </h2>
+                <!-- Aquí aparecerá el indicador de estado de los datos -->
+                <div id="dataStatus" class="text-sm font-medium">
+                    <span class="text-slate-400"><i class="fa-solid fa-spinner fa-spin"></i> Conectando y analizando datos...</span>
+                </div>
+            </div>
+            
+            <form id="searchForm" class="flex flex-col md:flex-row gap-4 items-end">
+                <div class="w-full md:w-1/3">
+                    <label for="grupo" class="block text-sm font-medium text-slate-600 mb-1">Grupo</label>
+                    <select id="grupo" required class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-academico-600 focus:border-academico-600 outline-none transition-all bg-white">
+                        <option value="" disabled selected>Cargando grupos...</option>
+                        <!-- Los grupos se cargarán dinámicamente aquí -->
+                    </select>
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <label for="boleta" class="block text-sm font-medium text-slate-600 mb-1">Número de Boleta</label>
+                    <input type="text" id="boleta" required placeholder="Ej. 2026320395" class="w-full rounded-lg border-slate-300 border p-3 focus:ring-2 focus:ring-academico-600 focus:border-academico-600 outline-none transition-all uppercase">
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <button type="submit" class="w-full bg-academico-600 hover:bg-academico-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-md flex justify-center items-center gap-2">
+                        <span>Consultar</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Mensaje de Error (Oculto por defecto) -->
+            <div id="errorMessage" class="hidden mt-6 p-4 bg-red-50 text-red-700 border border-red-200 rounded-lg flex items-center gap-3">
+                <i class="fa-solid fa-circle-exclamation text-xl"></i>
+                <p><strong>No encontrado.</strong> Por favor, verifica que el grupo y la boleta sean correctos. (Verifica si hay espacios extra).</p>
+            </div>
+        </section>
+
+        <!-- Sección de Resultados (Oculta por defecto) -->
+        <section id="resultsSection" class="hidden">
+            <!-- Info del Estudiante -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6 border-l-4 border-academico-600 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <p class="text-sm text-slate-500 uppercase tracking-wider font-semibold">Estudiante</p>
+                    <h3 id="studentName" class="text-2xl font-bold text-slate-800">Nombre del Estudiante</h3>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-center md:text-right">
+                        <p class="text-sm text-slate-500 uppercase tracking-wider font-semibold">Boleta</p>
+                        <p id="studentBoleta" class="text-lg font-medium text-slate-700">---</p>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <p class="text-sm text-slate-500 uppercase tracking-wider font-semibold">Grupo</p>
+                        <p id="studentGroup" class="text-lg font-medium text-slate-700">---</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de Visualización -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+                    <h3 id="rendimientoTitle" class="text-lg font-bold text-slate-800">
+                        <i class="fa-solid fa-chart-pie mr-2 text-academico-600"></i> Rendimiento por Práctica
+                    </h3>
+                    <div class="w-full md:w-64">
+                        <select id="practiceSelector" class="w-full rounded-lg border-slate-300 border p-2 bg-slate-50 focus:ring-2 focus:ring-academico-600 outline-none">
+                            <option value="todas">Todas las Prácticas</option>
+                            <!-- Se llena dinámicamente -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contenedor de Gráficos -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Gráfico de Pastel (Desglose de la práctica) -->
+                    <div id="pieChartContainer" class="bg-slate-50 p-4 rounded-xl border border-slate-100 flex flex-col items-center justify-center min-h-[350px]">
+                        <h4 id="pieChartTitle" class="text-center font-semibold text-slate-600 mb-4">Desglose de Criterios</h4>
+                        <div class="relative w-full max-w-[300px] aspect-square">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                        <p id="pieChartEmpty" class="hidden text-slate-400 text-sm mt-4 text-center">Selecciona una práctica individual para ver su desglose.</p>
+                    </div>
+
+                    <!-- Gráfico de Barras (Calificaciones totales) -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 flex flex-col items-center justify-center min-h-[350px]">
+                        <h4 id="barChartTitle" class="text-center font-semibold text-slate-600 mb-4">Calificaciones Generales</h4>
+                        <div class="relative w-full h-full min-h-[250px]">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-6 text-center text-sm">
+        <p>Sistema de Consulta de Calificaciones. Acceso de solo lectura.</p>
+    </footer>
+
+    <!-- Lógica de la Aplicación -->
+    <script>
+        // --- VARIABLES GLOBALES ---
+        let baseDatos = [];
+        let estudianteActual = null;
+        let pieChartInstance = null;
+        let barChartInstance = null;
+
+        // --- PALETA DE COLORES BRILLANTES Y REALES ---
+        const coloresBrillantes = [
+            'rgba(255, 60, 60, 0.85)',   // Rojo Carmesí
+            'rgba(54, 162, 235, 0.85)',  // Azul Brillante
+            'rgba(255, 206, 86, 0.85)',  // Amarillo Dorado
+            'rgba(46, 204, 113, 0.85)',  // Verde Esmeralda
+            'rgba(155, 89, 182, 0.85)',  // Morado Amatista
+            'rgba(255, 159, 64, 0.85)',  // Naranja Vibrante
+            'rgba(232, 67, 147, 0.85)',  // Rosa Fuerte
+            'rgba(0, 206, 201, 0.85)',   // Turquesa
+            'rgba(108, 92, 231, 0.85)'   // Índigo
+        ];
+        
+        const coloresBordes = coloresBrillantes.map(color => color.replace('0.85', '1'));
+
+        // --- INICIALIZACIÓN ---
+        document.addEventListener('DOMContentLoaded', async () => {
+            const statusIndicator = document.getElementById('dataStatus');
+            const grupoSelect = document.getElementById('grupo');
+
+            // Intentar cargar data.json
+            try {
+                // Caché buster
+                const response = await fetch('data.json?v=' + new Date().getTime());
+                if (response.ok) {
+                    const datosCrudos = await response.json();
+                    
+                    if(!Array.isArray(datosCrudos)) {
+                        throw new Error("El archivo JSON no es una lista válida.");
+                    }
+
+                    // ADAPTADOR SÚPER INTELIGENTE: Lee las columnas planas de tu Excel
+                    baseDatos = datosCrudos
+                        // FILTRO NUEVO: Elimina filas vacías o "fantasmas" que provienen del Excel
+                        .filter(estudiante => estudiante.boleta && String(estudiante.boleta).trim() !== '')
+                        .map(estudiante => {
+                            const practicasObj = {};
+                            const keys = Object.keys(estudiante);
+
+                            // Recorremos todas las columnas del JSON plano
+                            for (let i = 0; i < keys.length; i++) {
+                                const key = keys[i];
+                                
+                                // Si encontramos una columna que se llame 'sesion', 'sesion9', 'sesion14', etc.
+                                if (key.toLowerCase().startsWith('sesion')) {
+                                    const valorSesion = estudiante[key];
+                                    
+                                    // Si tiene texto adentro (ej. "Practica_02")
+                                    if (valorSesion && typeof valorSesion === 'string' && valorSesion.trim() !== '') {
+                                        // Extraemos solo el número para que sea ordenado y dinámico
+                                        const matchNum = valorSesion.match(/\d+/);
+                                        const numPractica = matchNum ? parseInt(matchNum[0]) : null;
+                                        
+                                        // Verificamos que tenga las 5 columnas anteriores disponibles
+                                        if (numPractica !== null && i >= 5) {
+                                            const nombreLimpio = `Práctica ${numPractica}`;
+                                            
+                                            // Tomamos exactamente los valores 5 lugares hacia atrás en el Excel
+                                            practicasObj[nombreLimpio] = {
+                                                "Actividad Previa": parseFloat(estudiante[keys[i-5]]) || 0,
+                                                "Laboratorio": parseFloat(estudiante[keys[i-4]]) || 0,
+                                                "Bitácora": parseFloat(estudiante[keys[i-3]]) || 0,
+                                                "Puntos Extra": parseFloat(estudiante[keys[i-2]]) || 0,
+                                                "Total": parseFloat(estudiante[keys[i-1]]) || 0
+                                            };
+                                        }
+                                    }
+                                }
+                            }
+
+                            // Método de respaldo por si el JSON sí venía agrupado (p1, p2)
+                            if (Object.keys(practicasObj).length === 0) {
+                                 for (const key in estudiante) {
+                                    if (key.match(/^p\d+$/i)) {
+                                        const num = key.replace(/\D/g, '');
+                                        const d = estudiante[key];
+                                        practicasObj[`Práctica ${num}`] = {
+                                            "Actividad Previa": parseFloat(d.actprev) || 0,
+                                            "Laboratorio": parseFloat(d.labexp) || 0,
+                                            "Bitácora": parseFloat(d.bitacora) || 0,
+                                            "Puntos Extra": parseFloat(d.ptosext) || 0,
+                                            "Total": parseFloat(d.calificacion) || 0
+                                        };
+                                    }
+                                 }
+                            }
+
+                            return {
+                                boleta: String(estudiante.boleta).trim(),
+                                nombre: String(estudiante.nombre).trim(),
+                                grupo: String(estudiante.grupo).trim(),
+                                practicas: practicasObj
+                            };
+                        });
+
+                    console.log("Datos analizados y adaptados con éxito.");
+                    statusIndicator.innerHTML = `<span class="text-green-600"><i class="fa-solid fa-circle-check"></i> Conectado: ${baseDatos.length} alumnos listos</span>`;
+                } else {
+                    throw new Error("No se encontró data.json en el servidor.");
+                }
+            } catch (error) {
+                console.error(error);
+                statusIndicator.innerHTML = `<span class="text-red-500"><i class="fa-solid fa-triangle-exclamation"></i> Error al leer el archivo JSON</span>`;
+            }
+
+            // --- CARGAR GRUPOS AUTOMÁTICAMENTE ---
+            try {
+                const gruposUnicos = [...new Set(baseDatos.map(est => est.grupo))].filter(Boolean).sort();
+                
+                grupoSelect.innerHTML = '<option value="" disabled selected>Selecciona tu grupo...</option>';
+                gruposUnicos.forEach(g => {
+                    const opt = document.createElement('option');
+                    opt.value = g;
+                    opt.textContent = g;
+                    grupoSelect.appendChild(opt);
+                });
+            } catch (e) {
+                console.error("Error al cargar grupos.");
+                grupoSelect.innerHTML = '<option value="" disabled selected>Error cargando grupos</option>';
+            }
+
+            // Configuración general de Chart.js
+            Chart.defaults.font.family = "'Segoe UI', Roboto, sans-serif";
+            Chart.defaults.color = '#475569';
+        });
+
+        // --- EVENTOS ---
+        const form = document.getElementById('searchForm');
+        const errorMsg = document.getElementById('errorMessage');
+        const resultsSec = document.getElementById('resultsSection');
+        const practiceSelector = document.getElementById('practiceSelector');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const grupo = document.getElementById('grupo').value;
+            const boleta = document.getElementById('boleta').value.trim().toUpperCase();
+
+            // Buscar estudiante
+            estudianteActual = baseDatos.find(est => 
+                est.grupo === grupo && 
+                est.boleta.toUpperCase() === boleta
+            );
+
+            if (estudianteActual) {
+                errorMsg.classList.add('hidden');
+                mostrarResultados();
+            } else {
+                resultsSec.classList.add('hidden');
+                errorMsg.classList.remove('hidden');
+            }
+        });
+
+        practiceSelector.addEventListener('change', () => {
+            if(estudianteActual) renderizarGraficos();
+        });
+
+        // --- FUNCIONES ---
+        function mostrarResultados() {
+            // Llenar datos de encabezado
+            document.getElementById('studentName').textContent = estudianteActual.nombre;
+            document.getElementById('studentBoleta').textContent = estudianteActual.boleta;
+            document.getElementById('studentGroup').textContent = estudianteActual.grupo;
+            
+            // Reconstruir el menú desplegable basado en las prácticas que realmente tiene este alumno
+            practiceSelector.innerHTML = '<option value="todas">Todas las Prácticas</option>';
+            
+            let numPracticas = 0;
+            if (estudianteActual.practicas) {
+                // Ordenar las llaves lógicamente ("Práctica 1", "Práctica 2", "Práctica 10")
+                const practicasNombres = Object.keys(estudianteActual.practicas).sort((a, b) => {
+                    const numA = parseInt(a.replace(/\D/g, '')) || 0;
+                    const numB = parseInt(b.replace(/\D/g, '')) || 0;
+                    return numA - numB;
+                });
+                
+                numPracticas = practicasNombres.length;
+
+                practicasNombres.forEach(nombre => {
+                    const opt = document.createElement('option');
+                    opt.value = nombre;
+                    opt.textContent = nombre;
+                    practiceSelector.appendChild(opt);
+                });
+            }
+
+            // Actualizar el título dinámicamente con la cantidad de prácticas que se encontraron
+            document.getElementById('rendimientoTitle').innerHTML = `<i class="fa-solid fa-chart-pie mr-2 text-academico-600"></i> Rendimiento (${numPracticas} evaluadas)`;
+            
+            // Mostrar sección
+            resultsSec.classList.remove('hidden');
+            
+            // Dibujar gráficas
+            renderizarGraficos();
+            
+            // Scroll suave a los resultados
+            resultsSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function renderizarGraficos() {
+            const seleccion = practiceSelector.value;
+            const practicas = estudianteActual.practicas || {};
+            
+            // Destruir gráficos previos si existen para evitar sobreposición
+            if (pieChartInstance) pieChartInstance.destroy();
+            if (barChartInstance) barChartInstance.destroy();
+
+            const ctxPie = document.getElementById('pieChart').getContext('2d');
+            const ctxBar = document.getElementById('barChart').getContext('2d');
+            
+            const pieEmptyMsg = document.getElementById('pieChartEmpty');
+            const pieCanvas = document.getElementById('pieChart');
+
+            if (seleccion === "todas") {
+                // --- MODO: TODAS LAS PRÁCTICAS ---
+                
+                // 1. Ocultar Pastel
+                pieCanvas.style.display = 'none';
+                pieEmptyMsg.classList.remove('hidden');
+                document.getElementById('pieChartTitle').textContent = "Desglose (Selecciona una práctica en el menú de arriba)";
+
+                // 2. Gráfico de Barras: Todas las prácticas ordenadas
+                const labelsBar = Object.keys(practicas).sort((a, b) => {
+                    const numA = parseInt(a.replace(/\D/g, '')) || 0;
+                    const numB = parseInt(b.replace(/\D/g, '')) || 0;
+                    return numA - numB;
+                });
+                const dataBar = labelsBar.map(p => practicas[p].Total || 0);
+
+                document.getElementById('barChartTitle').textContent = "Calificación Total por Práctica";
+
+                if(labelsBar.length === 0) {
+                    document.getElementById('barChartTitle').textContent = "Sin prácticas registradas";
+                }
+
+                // Ajustamos el máximo de la barra al máximo posible
+                let maxValueY = 100;
+                if (dataBar.some(val => val <= 10) && !dataBar.some(val => val > 10)) { maxValueY = 10; }
+
+                barChartInstance = new Chart(ctxBar, {
+                    type: 'bar',
+                    data: {
+                        labels: labelsBar.length > 0 ? labelsBar : ['Sin datos'],
+                        datasets: [{
+                            label: 'Calificación Total',
+                            data: dataBar.length > 0 ? dataBar : [0],
+                            backgroundColor: coloresBrillantes,
+                            borderColor: coloresBordes,
+                            borderWidth: 2,
+                            borderRadius: 6,
+                            barPercentage: 0.7
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: (context) => `Calificación: ${context.parsed.y}`
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: maxValueY,
+                                grid: { color: '#e2e8f0' }
+                            },
+                            x: {
+                                grid: { display: false }
+                            }
+                        }
+                    }
+                });
+
+            } else {
+                // --- MODO: UNA PRÁCTICA ESPECÍFICA ---
+                const datosPractica = practicas[seleccion];
+
+                if (!datosPractica) {
+                    alert("No hay datos registrados para esta práctica aún.");
+                    practiceSelector.value = "todas";
+                    renderizarGraficos();
+                    return;
+                }
+
+                // Extraer las columnas (excluyendo la llave 'Total')
+                const columnas = Object.keys(datosPractica).filter(key => key.toLowerCase() !== 'total');
+                const valoresColumnas = columnas.map(col => datosPractica[col]);
+                const total = datosPractica.Total;
+
+                // 1. Mostrar y dibujar Pastel
+                pieCanvas.style.display = 'block';
+                pieEmptyMsg.classList.add('hidden');
+                document.getElementById('pieChartTitle').textContent = `Desglose de ${seleccion}`;
+
+                pieChartInstance = new Chart(ctxPie, {
+                    type: 'pie',
+                    data: {
+                        labels: columnas.length > 0 ? columnas : ['Sin datos'],
+                        datasets: [{
+                            data: valoresColumnas.length > 0 ? valoresColumnas : [1],
+                            backgroundColor: [
+                                coloresBrillantes[0], coloresBrillantes[1], 
+                                coloresBrillantes[2], coloresBrillantes[3]
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 3,
+                            hoverOffset: 10
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { padding: 20, usePointStyle: true }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: (context) => ` ${context.label}: ${context.parsed} pts`
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // Autoajuste escala Y
+                let maxValueY = 100;
+                if (total <= 10) maxValueY = 10;
+
+                // 2. Dibujar Gráfico de Barras para ESA práctica
+                document.getElementById('barChartTitle').textContent = `Calificación Final - ${seleccion}`;
+
+                barChartInstance = new Chart(ctxBar, {
+                    type: 'bar',
+                    data: {
+                        labels: [seleccion],
+                        datasets: [{
+                            label: 'Calificación',
+                            data: [total],
+                            backgroundColor: coloresBrillantes[4], // Morado
+                            borderColor: coloresBordes[4],
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            barPercentage: 0.3
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: maxValueY,
+                                grid: { color: '#e2e8f0' }
+                            },
+                            x: {
+                                grid: { display: false }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
