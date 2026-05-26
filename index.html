@@ -38,6 +38,15 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
+        
+        /* Animación para las gráficas pequeñas */
+        @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-scale {
+            animation: fadeInScale 0.4s ease-out forwards;
+        }
     </style>
 </head>
 <body class="text-gray-800 min-h-screen flex flex-col">
@@ -114,16 +123,17 @@
 
             <!-- Tarjetas Resumen -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <!-- Tarjeta: Promedio/Total Prácticas -->
-                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-gray-400 transition-transform hover:-translate-y-1 duration-300">
-                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Total Prácticas</h3>
+                <!-- Tarjeta: Total Prácticas Aprobadas -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-gray-400 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Total Prácticas Aprobadas</h3>
                     <div class="flex items-baseline gap-2">
                         <span id="valor-practicas" class="text-5xl font-black text-gray-700">-</span>
+                        <span class="text-xl font-bold opacity-70"> / 9</span>
                     </div>
                 </div>
                 
                 <!-- Tarjeta: Puntos de Teoría -->
-                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-purple-500 transition-transform hover:-translate-y-1 duration-300">
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-purple-500 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between">
                     <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Puntos de Teoría</h3>
                     <div class="flex items-baseline gap-2">
                         <span id="valor-teoria" class="text-5xl font-black text-purple-700">-</span>
@@ -131,7 +141,7 @@
                 </div>
 
                 <!-- Tarjeta: Calificación Final -->
-                <div id="card-final" class="glass-effect p-6 rounded-2xl shadow-md border-l-8 transition-all hover:-translate-y-1 duration-300">
+                <div id="card-final" class="glass-effect p-6 rounded-2xl shadow-md border-l-8 transition-all hover:-translate-y-1 duration-300 flex flex-col justify-between">
                     <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Calificación Final</h3>
                     <div class="flex items-baseline gap-2">
                         <span id="valor-final" class="text-6xl font-black drop-shadow-sm">-</span>
@@ -140,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- Gráficas -->
+            <!-- Gráficas Principales -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <!-- Gráfica 1: Prácticas (Polar Area / Radar) -->
                 <div class="glass-effect p-6 rounded-2xl shadow-sm">
@@ -159,16 +169,51 @@
                 </div>
             </div>
 
+            <!-- Novedad: Selector de Desglose de Práctica -->
+            <div class="glass-effect p-6 rounded-2xl shadow-sm mb-8 animate-fade-scale">
+                <h3 class="text-lg font-bold text-gray-700 mb-4 border-b pb-2">Ver Desglose de Práctica Individual</h3>
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3">
+                        <div class="relative">
+                            <i class="fas fa-list absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                            <select id="selectDesglose" onchange="mostrarDesglosePractica()" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm appearance-none bg-white font-medium text-gray-700">
+                                <option value="" disabled selected>Selecciona una práctica...</option>
+                                <option value="0">Práctica 2</option>
+                                <option value="1">Práctica 3</option>
+                                <option value="2">Práctica 4</option>
+                                <option value="3">Práctica 5</option>
+                                <option value="4">Práctica 6</option>
+                                <option value="5">Práctica 7</option>
+                                <option value="6">Práctica 8</option>
+                                <option value="7">Práctica 9</option>
+                                <option value="8">Práctica 10</option>
+                            </select>
+                            <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenedor del Gráfico de Desglose -->
+                    <div class="w-full md:w-2/3 h-64 relative" id="contenedorChartIndividual">
+                        <!-- Mensaje Inicial -->
+                        <div id="mensajePlaceholderDesglose" class="absolute inset-0 flex items-center justify-center text-gray-400 italic">
+                            Selecciona una práctica para ver sus rubros calificados
+                        </div>
+                        <canvas id="chartIndividual" class="hidden"></canvas>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <!-- Lógica de la Aplicación -->
     <script>
         let alumnosData = [];
+        let alumnoActual = null; // Guardamos el alumno actual para reusarlo en los desgloses
         let chartPracticasInstance = null;
         let chartDesgloseInstance = null;
+        let chartIndividualInstance = null;
 
-        // Se han corregido las prácticas 6, 7 y 8 para evitar repeticiones visuales
         const coloresBrillantes = [
             '#5faae1', // Práctica 2 
             '#5fd6e1', // Práctica 3 
@@ -179,6 +224,19 @@
             '#e15f5f', // Práctica 8 (Ajustado a tono rojo coral)
             '#2637cb', // Práctica 9 
             '#2d9f1a'  // Práctica 10 
+        ];
+
+        // Mapeo de llaves para el desglose de cada práctica según tu JSON (actprev, labexp, bitacora, ptosext)
+        const llavesDesglose = [
+            { prev: 'actprev',   exp: 'labexp',   bit: 'bitacora',   ext: 'ptosext',   calif: 'calificacion' },   // Prác 2
+            { prev: 'actprev5',  exp: 'labexp6',  bit: 'bitacora7',  ext: 'ptosext2',  calif: 'calificacion9' },  // Prác 3
+            { prev: 'actprev6',  exp: 'labexp7',  bit: 'bitacora8',  ext: 'ptosext3',  calif: 'calificacion10' }, // Prác 4
+            { prev: 'actprev7',  exp: 'labexp8',  bit: 'bitacora9',  ext: 'ptosext4',  calif: 'calificacion11' }, // Prác 5
+            { prev: 'actprev8',  exp: 'labexp9',  bit: 'bitacora10', ext: 'ptosext5',  calif: 'calificacion12' }, // Prác 6
+            { prev: 'actprev9',  exp: 'labexp10', bit: 'bitacora11', ext: 'ptosext6',  calif: 'calificacion13' }, // Prác 7
+            { prev: 'actprev10', exp: 'labexp11', bit: 'bitacora12', ext: 'ptosext7',  calif: 'calificacion14' }, // Prác 8
+            { prev: 'actprev11', exp: 'labexp12', bit: 'bitacora13', ext: 'ptosext8',  calif: 'calificacion15' }, // Prác 9
+            { prev: 'actprev12', exp: 'labexp13', bit: 'bitacora14', ext: 'ptosext9',  calif: 'calificacion16' }  // Prác 10
         ];
 
         // 1. Cargar el JSON al iniciar la página
@@ -195,11 +253,16 @@
             } catch (error) {
                 console.warn("Usando datos de prueba. En tu servidor funcionará con tu data.json.");
                 alumnosData = [
-                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", calificacion: "80", calificacion9: "90", calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" }
+                    { 
+                        boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", 
+                        promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", 
+                        actprev: "30", labexp: "20", bitacora: "30", ptosext: "0", calificacion: "80", 
+                        actprev5: "30", labexp6: "20", bitacora7: "40", ptosext2: "0", calificacion9: "90", 
+                        calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" 
+                    }
                 ];
             }
 
-            // Llenar el menú desplegable de Grupos dinámicamente
             const selectGrupo = document.getElementById('selectGrupo');
             const gruposSet = new Set();
             
@@ -230,7 +293,6 @@
                 return;
             }
 
-            // Búsqueda robusta: ignora mayúsculas/minúsculas y espacios extras
             const alumno = alumnosData.find(a => 
                 (a.grupo && String(a.grupo).trim().toUpperCase() === grupoSeleccionado) && 
                 (a.boleta && String(a.boleta).trim().toUpperCase() === boletaIngresada)
@@ -238,11 +300,19 @@
 
             if (alumno) {
                 errorMsg.classList.add('hidden');
+                alumnoActual = alumno; // Guardar referencia global
+                
+                // Reiniciar el selector de desglose
+                document.getElementById('selectDesglose').value = "";
+                document.getElementById('mensajePlaceholderDesglose').classList.remove('hidden');
+                document.getElementById('chartIndividual').classList.add('hidden');
+
                 mostrarResultados(alumno);
             } else {
                 errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> No se encontró ningún alumno con ese Grupo y Boleta. Verifica tus datos.';
                 errorMsg.classList.remove('hidden');
                 resultadosArea.classList.add('hidden');
+                alumnoActual = null;
             }
         }
 
@@ -254,7 +324,6 @@
             document.getElementById('info-boleta').textContent = `Boleta: ${alumno.boleta || 'N/A'}`;
             document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
 
-            // --- FUNCIÓN ROBUSTA DE EXTRACCIÓN ---
             const getVal = (obj, posiblesLlaves) => {
                 const llavesBuscadas = posiblesLlaves.map(k => k.toLowerCase());
                 for (let objKey in obj) {
@@ -264,17 +333,13 @@
                         }
                     }
                 }
-                return 0; // Si no hay valor, retorna 0
+                return 0; 
             };
 
-            const practicas = getVal(alumno, ['promedio', 'total', 'practicas']);
             const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria']);
             let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final']);
-            
-            if (final === 0 && (practicas > 0 || teoria > 0)) final = practicas + teoria;
 
             // --- RECOLECCIÓN DE PUNTOS PARA LAS 9 PRÁCTICAS ---
-            // Se agregaron más posibles llaves para evitar que se pierdan datos como la práctica 10
             const puntajesPracticas = [
                 getVal(alumno, ['calificacion', 'calificacion2', 'practica2']),
                 getVal(alumno, ['calificacion9', 'calificacion3', 'practica3']),
@@ -284,14 +349,23 @@
                 getVal(alumno, ['calificacion13', 'calificacion7', 'practica7']),
                 getVal(alumno, ['calificacion14', 'calificacion8', 'practica8']),
                 getVal(alumno, ['calificacion15', 'calificacion9', 'practica9']),
-                getVal(alumno, ['calificacion16', 'calificacion17', 'calificacion10', 'practica10']) // Búsqueda extendida para Práctica 10
+                getVal(alumno, ['calificacion16', 'calificacion17', 'calificacion10', 'practica10'])
             ];
             
-            // 9 Etiquetas exactas
             const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; 
 
+            // --- CÁLCULO DE PRÁCTICAS APROBADAS (>= 70) ---
+            let numPracticasAprobadas = 0;
+            puntajesPracticas.forEach(calif => {
+                if (calif >= 70) numPracticasAprobadas++;
+            });
+
+            // Extraemos el "Promedio" si el JSON lo tiene, si no, se deja 0 para evitar descuadres en barras
+            const promedioOriginal = getVal(alumno, ['promedio', 'total', 'practicas']);
+            if (final === 0 && (promedioOriginal > 0 || teoria > 0)) final = promedioOriginal + teoria;
+
             // --- ACTUALIZACIÓN DE TARJETAS ---
-            document.getElementById('valor-practicas').textContent = practicas.toFixed(1);
+            document.getElementById('valor-practicas').textContent = numPracticasAprobadas; // Ahora muestra número entero
             document.getElementById('valor-teoria').textContent = teoria.toFixed(1);
             
             const cardFinal = document.getElementById('card-final');
@@ -303,12 +377,12 @@
             
             if (final < 80) {
                 valorFinal.className = "text-6xl font-black text-red-600 drop-shadow-sm";
-                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-red-500 bg-red-50";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-red-500 bg-red-50 flex flex-col justify-between";
                 colorGraficaFinal = 'rgba(220, 38, 38, 0.85)';
                 mensajeAcreditado.classList.add('hidden');
             } else {
                 valorFinal.className = "text-6xl font-black text-blue-600 drop-shadow-sm";
-                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-blue-500 bg-blue-50";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-blue-500 bg-blue-50 flex flex-col justify-between";
                 colorGraficaFinal = 'rgba(37, 99, 235, 0.85)';
                 
                 mensajeAcreditado.className = "mb-6 p-4 rounded-xl shadow-sm flex items-center gap-3 font-bold text-lg bg-green-50 text-green-800 border border-green-300 animate-fade-in-up";
@@ -343,12 +417,8 @@
                             callbacks: {
                                 label: function(context) {
                                     let label = context.dataset.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    if (context.parsed.r !== null) {
-                                        label += context.parsed.r;
-                                    }
+                                    if (label) { label += ': '; }
+                                    if (context.parsed.r !== null) { label += context.parsed.r; }
                                     return label;
                                 }
                             }
@@ -364,10 +434,10 @@
             chartDesgloseInstance = new Chart(ctxDesglose, {
                 type: 'bar',
                 data: {
-                    labels: ['Prácticas', 'Teoría', 'Final'],
+                    labels: ['Promedio Prácticas', 'Teoría', 'Final'],
                     datasets: [{
                         label: 'Puntos',
-                        data: [practicas, teoria, final],
+                        data: [promedioOriginal, teoria, final],
                         backgroundColor: [
                             'rgba(156, 163, 175, 0.8)',
                             'rgba(168, 85, 247, 0.8)',
@@ -385,16 +455,90 @@
                             callbacks: {
                                 label: function(context) {
                                     let label = context.dataset.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    if (context.parsed.y !== null) {
-                                        label += context.parsed.y;
-                                    }
+                                    if (label) { label += ': '; }
+                                    if (context.parsed.y !== null) { label += context.parsed.y; }
                                     return label;
                                 }
                             }
                         } 
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+
+        // --- 4. FUNCIÓN PARA MOSTRAR DESGLOSE DE PRÁCTICA INDIVIDUAL ---
+        function mostrarDesglosePractica() {
+            const indice = parseInt(document.getElementById('selectDesglose').value);
+            if (isNaN(indice) || !alumnoActual) return;
+
+            document.getElementById('mensajePlaceholderDesglose').classList.add('hidden');
+            const canvasChart = document.getElementById('chartIndividual');
+            canvasChart.classList.remove('hidden');
+
+            const llaves = llavesDesglose[indice];
+            const tituloPractica = `Práctica ${indice + 2}`;
+            const colorPractica = coloresBrillantes[indice];
+
+            const getValSafe = (obj, key) => {
+                // Función auxiliar que busca la llave en el JSON de forma insensible a mayúsculas
+                if(!key) return 0;
+                for (let objKey in obj) {
+                    if (objKey.toLowerCase() === key.toLowerCase()) {
+                        return parseFloat(obj[objKey]) || 0;
+                    }
+                }
+                return 0;
+            };
+
+            const actPrev = getValSafe(alumnoActual, llaves.prev);
+            const labExp = getValSafe(alumnoActual, llaves.exp);
+            const bitacora = getValSafe(alumnoActual, llaves.bit);
+            const ptosExt = getValSafe(alumnoActual, llaves.ext);
+            
+            // La calificación final es la suma de esos 4 rubros como estaba en tu código anterior
+            const califTotal = actPrev + labExp + bitacora + ptosExt;
+
+            const ctxIndividual = canvasChart.getContext('2d');
+            if (chartIndividualInstance) chartIndividualInstance.destroy();
+
+            chartIndividualInstance = new Chart(ctxIndividual, {
+                type: 'bar',
+                data: {
+                    labels: ['Act. Previa', 'Lab. Exp.', 'Bitácora', 'Puntos Ext.', 'Calificación Total'],
+                    datasets: [{
+                        label: 'Puntaje',
+                        data: [actPrev, labExp, bitacora, ptosExt, califTotal],
+                        backgroundColor: [
+                            'rgba(156, 163, 175, 0.6)', // Gris
+                            'rgba(156, 163, 175, 0.6)', 
+                            'rgba(156, 163, 175, 0.6)', 
+                            'rgba(156, 163, 175, 0.6)', 
+                            colorPractica // La barra final usa el color correspondiente a esa práctica
+                        ],
+                        borderColor: [
+                            'rgba(107, 114, 128, 1)',
+                            'rgba(107, 114, 128, 1)',
+                            'rgba(107, 114, 128, 1)',
+                            'rgba(107, 114, 128, 1)',
+                            colorPractica
+                        ],
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: `Desglose de ${tituloPractica}`,
+                            font: { size: 14 }
+                        }
                     },
                     scales: {
                         y: { beginAtZero: true, max: 100 }
