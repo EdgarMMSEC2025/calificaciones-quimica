@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones | Lab. de Química</title>
+    <!-- Tailwind CSS para el diseño responsivo y UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js para los gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        // Configuración de colores personalizados de Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academico: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #f8fafc;
+            /* Patrón de fondo sutil */
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Encabezado -->
+    <header class="bg-academico-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold flex items-center gap-3">
+                <i class="fas fa-flask text-academico-100"></i>
+                Laboratorio de Química - Portal de Calificaciones
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-8 w-full">
+        
+        <!-- Tarjeta de Búsqueda -->
+        <div class="glass-effect p-6 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4">Consultar Alumno</h2>
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="relative flex-1">
+                    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="searchInput" list="studentsList" 
+                           class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 focus:border-transparent outline-none transition-all shadow-sm" 
+                           placeholder="Ingresa la Boleta o el Nombre del alumno...">
+                    <datalist id="studentsList"></datalist>
+                </div>
+                <button onclick="buscarAlumno()" 
+                        class="bg-academico-600 hover:bg-academico-800 text-white px-8 py-3 rounded-xl font-bold shadow-md transition-all duration-300 flex items-center justify-center gap-2">
+                    Buscar
+                </button>
+            </div>
+            <div id="error-msg" class="text-red-500 font-medium mt-3 hidden flex items-center gap-2">
+                <i class="fas fa-exclamation-circle"></i> Alumno no encontrado. Verifica la boleta o el nombre.
+            </div>
+        </div>
+
+        <!-- Área de Resultados (Oculta por defecto) -->
+        <div id="resultados" class="hidden animate-fade-in-up">
+            
+            <!-- Encabezado del Estudiante -->
+            <div class="mb-6 flex flex-col md:flex-row md:items-end justify-between border-b pb-4">
+                <div>
+                    <h2 id="info-nombre" class="text-3xl font-bold text-gray-800 uppercase tracking-wide"></h2>
+                    <div class="flex gap-4 mt-2 text-gray-600 font-medium">
+                        <span id="info-boleta" class="bg-gray-200 px-3 py-1 rounded-md text-sm"></span>
+                        <span id="info-grupo" class="bg-academico-100 text-academico-800 px-3 py-1 rounded-md text-sm"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje de Acreditación -->
+            <div id="mensaje-acreditado" class="hidden mb-6"></div>
+
+            <!-- Tarjetas de Calificaciones -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                
+                <!-- Tarjeta: Promedio/Total Prácticas -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-gray-400 transition-transform hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Total Prácticas</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-practicas" class="text-5xl font-black text-gray-700">-</span>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta: Puntos de Teoría -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-purple-500 transition-transform hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Puntos de Teoría</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-teoria" class="text-5xl font-black text-purple-700">-</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Calificación Final (Cambia de color dinámicamente) -->
+                <div id="card-final" class="glass-effect p-6 rounded-2xl shadow-md border-l-8 transition-all hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Calificación Final</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-final" class="text-6xl font-black drop-shadow-sm">-</span>
+                        <span class="text-xl font-bold opacity-70">/ 100</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Gráfico -->
+            <div class="glass-effect p-6 rounded-2xl shadow-sm mb-8">
+                <h3 id="barChartTitle" class="text-lg font-bold text-gray-700 mb-6 border-b pb-2">Desglose de Calificación</h3>
+                <div class="relative h-80 w-full">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-auto">
+        <p>&copy; 2026 Instituto - Laboratorio de Química. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Lógica de la Aplicación -->
+    <script>
+        let alumnosData = [];
+        let barChartInstance = null;
+
+        // 1. Cargar el JSON al iniciar la página
+        async function cargarDatos() {
+            try {
+                // Validación para evitar el TypeError en el entorno de previsualización (blob URLs)
+                if (window.location.protocol === 'blob:' || window.location.protocol === 'data:') {
+                    throw new Error("Entorno de previsualización detectado. Cargando datos de prueba.");
+                }
+
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error("Error HTTP " + response.status);
+                alumnosData = await response.json();
+                
+            } catch (error) {
+                console.warn("Se usarán datos de prueba. En GitHub, usará tu data.json original.", error.message);
+                
+                // Datos de prueba (Fallback) para que puedas probar la aplicación aquí
+                alumnosData = [
+                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", TOTAL: 84, teoria: 10, FINAL: 94 },
+                    { boleta: "2026320607", nombre: "LOPEZ ROJAS LESLIE MARCELA", grupo: "1IM29", TOTAL: 94, teoria: 0, FINAL: 94 },
+                    { boleta: "2026000000", nombre: "ALUMNO DE EJEMPLO REPROBADO", grupo: "1PM12", TOTAL: 60, teoria: 10, FINAL: 70 }
+                ];
+            }
+
+            // Llenar el Datalist para autocompletado rápido
+            const datalist = document.getElementById('studentsList');
+            datalist.innerHTML = ''; // Limpiar opciones previas
+            alumnosData.forEach(alumno => {
+                if(alumno.boleta && alumno.nombre) {
+                    const option = document.createElement('option');
+                    option.value = alumno.boleta; // Al seleccionar autocompleta la boleta
+                    option.textContent = alumno.nombre;
+                    datalist.appendChild(option);
+                }
+            });
+        }
+
+        // 2. Función de búsqueda
+        function buscarAlumno() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!query) return;
+
+            // Busca coincidencias por boleta o por nombre
+            const alumno = alumnosData.find(a => 
+                (a.boleta && a.boleta.toLowerCase() === query) || 
+                (a.nombre && a.nombre.toLowerCase().includes(query))
+            );
+
+            const errorMsg = document.getElementById('error-msg');
+            const resultadosArea = document.getElementById('resultados');
+
+            if (alumno) {
+                errorMsg.classList.add('hidden');
+                mostrarResultados(alumno);
+            } else {
+                errorMsg.classList.remove('hidden');
+                resultadosArea.classList.add('hidden');
+            }
+        }
+
+        // 3. Mostrar la información en el DOM
+        function mostrarResultados(alumno) {
+            document.getElementById('resultados').classList.remove('hidden');
+            
+            // Encabezados
+            document.getElementById('info-nombre').textContent = alumno.nombre || 'Nombre no registrado';
+            document.getElementById('info-boleta').textContent = `Boleta: ${alumno.boleta || 'N/A'}`;
+            document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
+
+            // --- LÓGICA DE EXTRACCIÓN DE DATOS ---
+            // Función auxiliar para buscar diferentes nombres de llaves en tu JSON
+            const getVal = (obj, posiblesLlaves) => {
+                for (let key of posiblesLlaves) {
+                    if (obj[key] !== undefined && obj[key] !== "") {
+                        return parseFloat(obj[key]) || 0;
+                    }
+                }
+                return 0;
+            };
+
+            // Extraemos los valores (modifica los arreglos si tus llaves se llaman diferente)
+            const practicas = getVal(alumno, ['TOTAL', 'total', 'promedio', 'actprev']);
+            const teoria = getVal(alumno, ['teoria', 'TEORIA', 'puntos_teoria', 'PuntosTeoria']);
+            
+            // Intentamos sacar la calificación final del JSON, si no existe, la sumamos (Practicas + Teoria)
+            let final = getVal(alumno, ['FINAL', 'final', 'calificacion_final', 'CalificacionFinal', 'calificacion']);
+            if (final === 0 && (practicas > 0 || teoria > 0)) {
+                final = practicas + teoria;
+            }
+
+            // --- ACTUALIZACIÓN DE TARJETAS ---
+            document.getElementById('valor-practicas').textContent = practicas.toFixed(1);
+            document.getElementById('valor-teoria').textContent = teoria.toFixed(1);
+            
+            const cardFinal = document.getElementById('card-final');
+            const valorFinal = document.getElementById('valor-final');
+            valorFinal.textContent = final.toFixed(1);
+
+            // --- REGLA DE COLORES (Menor a 80 = Rojo, 80 o mayor = Azul) ---
+            let colorGraficaFinal = '';
+            const mensajeAcreditado = document.getElementById('mensaje-acreditado');
+            
+            if (final < 80) {
+                valorFinal.className = "text-6xl font-black text-red-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-red-500 bg-red-50 transition-all hover:-translate-y-1 duration-300";
+                colorGraficaFinal = 'rgba(220, 38, 38, 0.85)'; // red-600 para la gráfica
+                
+                // Ocultar mensaje de acreditación si reprobó
+                mensajeAcreditado.classList.add('hidden');
+            } else {
+                valorFinal.className = "text-6xl font-black text-blue-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-blue-500 bg-blue-50 transition-all hover:-translate-y-1 duration-300";
+                colorGraficaFinal = 'rgba(37, 99, 235, 0.85)'; // blue-600 para la gráfica
+                
+                // Mostrar mensaje de felicitaciones
+                mensajeAcreditado.className = "mb-6 p-4 rounded-xl shadow-sm flex items-center gap-3 font-bold text-lg bg-green-50 text-green-800 border border-green-300 animate-fade-in-up";
+                mensajeAcreditado.innerHTML = '<i class="fas fa-medal text-2xl text-green-600"></i><span>¡Felicidades! Has acreditado exitosamente.</span>';
+                mensajeAcreditado.classList.remove('hidden');
+            }
+
+            // --- ACTUALIZACIÓN DE GRÁFICA ---
+            document.getElementById('barChartTitle').textContent = `Desglose de Calificación - ${alumno.boleta}`;
+            const ctx = document.getElementById('barChart').getContext('2d');
+            
+            // Destruir la gráfica anterior si existe para evitar superposiciones
+            if (barChartInstance) barChartInstance.destroy();
+
+            barChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Prácticas', 'Puntos de Teoría', 'Calificación Final'],
+                    datasets: [{
+                        label: 'Puntaje',
+                        data: [practicas, teoria, final],
+                        backgroundColor: [
+                            'rgba(156, 163, 175, 0.8)', // Gris para prácticas
+                            'rgba(168, 85, 247, 0.8)', // Morado para teoría
+                            colorGraficaFinal          // Dinámico (rojo/azul) para el final
+                        ],
+                        borderColor: [
+                            'rgba(107, 114, 128, 1)',
+                            'rgba(147, 51, 234, 1)',
+                            final < 80 ? 'rgba(185, 28, 28, 1)' : 'rgba(29, 78, 216, 1)'
+                        ],
+                        borderWidth: 2,
+                        borderRadius: 6,
+                        barPercentage: 0.5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100, // Escala máxima hasta 100
+                            grid: { color: 'rgba(0, 0, 0, 0.05)', borderDash: [5, 5] }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { font: { weight: 'bold', size: 14 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Iniciar carga de datos al abrir la página
+        window.onload = cargarDatos;
+
+        // Permitir buscar presionando la tecla "Enter"
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') buscarAlumno();
+            });
+        });
+    </script>
+</body>
+</html>
