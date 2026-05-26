@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones | Lab. de Química</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academico: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Encabezado -->
+    <header class="bg-academico-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold flex items-center gap-3">
+                <i class="fas fa-flask text-academico-100"></i>
+                Consulta de Calificaciones - Laboratorio de Química
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-8 w-full">
+        
+        <!-- Tarjeta de Búsqueda -->
+        <div class="glass-effect p-6 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4"><i class="fas fa-search mr-2"></i>Buscar Alumno</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-end">
+                
+                <!-- 1. Seleccionar Grupo -->
+                <div class="w-full md:w-1/3">
+                    <label class="block text-sm font-bold text-gray-600 mb-2">1. Selecciona el Grupo:</label>
+                    <div class="relative">
+                        <i class="fas fa-users absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <select id="selectGrupo" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm appearance-none bg-white">
+                            <option value="">Elegir grupo...</option>
+                            <!-- Opciones se llenan dinámicamente -->
+                        </select>
+                        <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                    </div>
+                </div>
+
+                <!-- 2. Ingresar Boleta -->
+                <div class="w-full md:w-1/3">
+                    <label class="block text-sm font-bold text-gray-600 mb-2">2. Ingresa la Boleta:</label>
+                    <div class="relative">
+                        <i class="fas fa-id-card absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="inputBoleta" 
+                               class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm" 
+                               placeholder="Ej. 2026320395">
+                    </div>
+                </div>
+
+                <!-- Botón de Búsqueda -->
+                <div class="w-full md:w-1/3">
+                    <button onclick="buscarAlumno()" 
+                            class="w-full bg-academico-600 hover:bg-academico-800 text-white py-3 rounded-xl font-bold shadow-md transition-all duration-300 flex items-center justify-center gap-2">
+                        Consultar Calificación
+                    </button>
+                </div>
+            </div>
+            <div id="error-msg" class="text-red-500 font-medium mt-4 hidden flex items-center gap-2 bg-red-50 p-3 rounded-lg border border-red-200">
+                <i class="fas fa-exclamation-circle"></i> Mensaje de error aquí.
+            </div>
+        </div>
+
+        <!-- Área de Resultados -->
+        <div id="resultados" class="hidden animate-fade-in-up">
+            
+            <!-- Encabezado del Estudiante -->
+            <div class="mb-4">
+                <h2 id="info-nombre" class="text-3xl font-bold text-gray-800 uppercase tracking-wide"></h2>
+                <div class="flex gap-4 mt-2 text-gray-600 font-medium border-b pb-4">
+                    <span id="info-boleta" class="bg-gray-200 px-3 py-1 rounded-md text-sm"></span>
+                    <span id="info-grupo" class="bg-academico-100 text-academico-800 px-3 py-1 rounded-md text-sm"></span>
+                </div>
+            </div>
+
+            <!-- Mensaje de Acreditación -->
+            <div id="mensaje-acreditado" class="hidden mb-6"></div>
+
+            <!-- Tarjetas Resumen -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- Tarjeta: Promedio/Total Prácticas -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-gray-400 transition-transform hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Total Prácticas</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-practicas" class="text-5xl font-black text-gray-700">-</span>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta: Puntos de Teoría -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-purple-500 transition-transform hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Puntos de Teoría</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-teoria" class="text-5xl font-black text-purple-700">-</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Calificación Final -->
+                <div id="card-final" class="glass-effect p-6 rounded-2xl shadow-md border-l-8 transition-all hover:-translate-y-1 duration-300">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Calificación Final</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-final" class="text-6xl font-black drop-shadow-sm">-</span>
+                        <span class="text-xl font-bold opacity-70">/ 100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficas -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Gráfica 1: Prácticas (Polar Area / Radar) -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-700 mb-6 border-b pb-2">Calificaciones por Práctica</h3>
+                    <div class="relative h-80 w-full flex justify-center">
+                        <canvas id="chartPracticas"></canvas>
+                    </div>
+                </div>
+
+                <!-- Gráfica 2: Desglose Final (Barras) -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-700 mb-6 border-b pb-2">Desglose Final</h3>
+                    <div class="relative h-80 w-full">
+                        <canvas id="chartDesglose"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Lógica de la Aplicación -->
+    <script>
+        let alumnosData = [];
+        let chartPracticasInstance = null;
+        let chartDesgloseInstance = null;
+
+        const coloresBrillantes = [
+            '#5faae1', // Práctica 2
+            '#5fd6e1', // Práctica 3
+            '#5fe1ae', // Práctica 4
+            '#a85fe1', // Práctica 5
+            '#a85fe1', // Práctica 6
+            '#a85fe1', // Práctica 7
+            '#a85fe1', // Práctica 8
+            '#2637cb', // Práctica 9
+            '#2d9f1a'  // Práctica 10
+        ];
+
+        // 1. Cargar el JSON al iniciar la página
+        async function cargarDatos() {
+            try {
+                if (window.location.protocol === 'blob:' || window.location.protocol === 'data:') {
+                    throw new Error("Entorno local detectado.");
+                }
+
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error("Error HTTP " + response.status);
+                alumnosData = await response.json();
+                
+            } catch (error) {
+                console.warn("Usando datos de prueba. En tu servidor funcionará con tu data.json.");
+                alumnosData = [
+                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", calificacion: "80", calificacion9: "90", calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" }
+                ];
+            }
+
+            // Llenar el menú desplegable de Grupos dinámicamente
+            const selectGrupo = document.getElementById('selectGrupo');
+            const gruposSet = new Set();
+            
+            alumnosData.forEach(alumno => {
+                if(alumno.grupo) gruposSet.add(String(alumno.grupo).trim().toUpperCase());
+            });
+
+            const gruposArray = Array.from(gruposSet).sort();
+            gruposArray.forEach(grupo => {
+                const option = document.createElement('option');
+                option.value = grupo;
+                option.textContent = grupo;
+                selectGrupo.appendChild(option);
+            });
+        }
+
+        // 2. Función de búsqueda
+        function buscarAlumno() {
+            const grupoSeleccionado = document.getElementById('selectGrupo').value.trim().toUpperCase();
+            const boletaIngresada = document.getElementById('inputBoleta').value.trim().toUpperCase();
+            const errorMsg = document.getElementById('error-msg');
+            const resultadosArea = document.getElementById('resultados');
+
+            if (!grupoSeleccionado || !boletaIngresada) {
+                errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Por favor, selecciona un grupo y escribe una boleta.';
+                errorMsg.classList.remove('hidden');
+                resultadosArea.classList.add('hidden');
+                return;
+            }
+
+            // Búsqueda robusta: ignora mayúsculas/minúsculas y espacios extras
+            const alumno = alumnosData.find(a => 
+                (a.grupo && String(a.grupo).trim().toUpperCase() === grupoSeleccionado) && 
+                (a.boleta && String(a.boleta).trim().toUpperCase() === boletaIngresada)
+            );
+
+            if (alumno) {
+                errorMsg.classList.add('hidden');
+                mostrarResultados(alumno);
+            } else {
+                errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> No se encontró ningún alumno con ese Grupo y Boleta. Verifica tus datos.';
+                errorMsg.classList.remove('hidden');
+                resultadosArea.classList.add('hidden');
+            }
+        }
+
+        // 3. Mostrar la información
+        function mostrarResultados(alumno) {
+            document.getElementById('resultados').classList.remove('hidden');
+            
+            document.getElementById('info-nombre').textContent = alumno.nombre || 'Nombre no registrado';
+            document.getElementById('info-boleta').textContent = `Boleta: ${alumno.boleta || 'N/A'}`;
+            document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
+
+            // --- FUNCIÓN ROBUSTA DE EXTRACCIÓN ---
+            // Busca llaves sin importar si están en mayúsculas o minúsculas en el JSON
+            const getVal = (obj, posiblesLlaves) => {
+                const llavesBuscadas = posiblesLlaves.map(k => k.toLowerCase());
+                for (let objKey in obj) {
+                    if (llavesBuscadas.includes(objKey.toLowerCase())) {
+                        if (obj[objKey] !== undefined && obj[objKey] !== "") {
+                            return parseFloat(obj[objKey]) || 0;
+                        }
+                    }
+                }
+                return 0;
+            };
+
+            // Extracción buscando las llaves de tu data.json (promedio, PuntosTeoria, CalificacionFinal)
+            const practicas = getVal(alumno, ['promedio', 'total', 'practicas']);
+            const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria']);
+            let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final']);
+            
+            if (final === 0 && (practicas > 0 || teoria > 0)) final = practicas + teoria;
+
+            // Extraer calificaciones individuales para la gráfica polar
+            const puntajesPracticas = [
+                getVal(alumno, ['calificacion']),
+                getVal(alumno, ['calificacion9']),
+                getVal(alumno, ['calificacion10']),
+                getVal(alumno, ['calificacion11']),
+                getVal(alumno, ['calificacion12']),
+                getVal(alumno, ['calificacion13']),
+                getVal(alumno, ['calificacion14']),
+                getVal(alumno, ['calificacion15']),
+                getVal(alumno, ['calificacion16']) // Añadido para Práctica 10
+            ];
+            const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; // Añadido para Práctica 10
+
+            // --- ACTUALIZACIÓN DE TARJETAS ---
+            document.getElementById('valor-practicas').textContent = practicas.toFixed(1);
+            document.getElementById('valor-teoria').textContent = teoria.toFixed(1);
+            
+            const cardFinal = document.getElementById('card-final');
+            const valorFinal = document.getElementById('valor-final');
+            const mensajeAcreditado = document.getElementById('mensaje-acreditado');
+            valorFinal.textContent = final.toFixed(1);
+
+            let colorGraficaFinal = '';
+            
+            if (final < 80) {
+                valorFinal.className = "text-6xl font-black text-red-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-red-500 bg-red-50";
+                colorGraficaFinal = 'rgba(220, 38, 38, 0.85)';
+                mensajeAcreditado.classList.add('hidden');
+            } else {
+                valorFinal.className = "text-6xl font-black text-blue-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-blue-500 bg-blue-50";
+                colorGraficaFinal = 'rgba(37, 99, 235, 0.85)';
+                
+                mensajeAcreditado.className = "mb-6 p-4 rounded-xl shadow-sm flex items-center gap-3 font-bold text-lg bg-green-50 text-green-800 border border-green-300 animate-fade-in-up";
+                mensajeAcreditado.innerHTML = '<i class="fas fa-medal text-2xl text-green-600"></i><span>¡Felicidades! Has acreditado exitosamente.</span>';
+                mensajeAcreditado.classList.remove('hidden');
+            }
+
+            // --- GRÁFICA 1: PRÁCTICAS ---
+            const ctxPracticas = document.getElementById('chartPracticas').getContext('2d');
+            if (chartPracticasInstance) chartPracticasInstance.destroy();
+            
+            chartPracticasInstance = new Chart(ctxPracticas, {
+                type: 'polarArea',
+                data: {
+                    labels: etiquetasPracticas,
+                    datasets: [{
+                        label: 'Calificación',
+                        data: puntajesPracticas,
+                        backgroundColor: coloresBrillantes,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: { min: 0, max: 100, ticks: { stepSize: 20 } }
+                    },
+                    plugins: { 
+                        legend: { position: 'right' },
+                        // Configuración de Tooltips
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.r !== null) {
+                                        label += context.parsed.r;
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // --- GRÁFICA 2: DESGLOSE FINAL ---
+            const ctxDesglose = document.getElementById('chartDesglose').getContext('2d');
+            if (chartDesgloseInstance) chartDesgloseInstance.destroy();
+
+            chartDesgloseInstance = new Chart(ctxDesglose, {
+                type: 'bar',
+                data: {
+                    labels: ['Prácticas', 'Teoría', 'Final'],
+                    datasets: [{
+                        label: 'Puntos',
+                        data: [practicas, teoria, final],
+                        backgroundColor: [
+                            'rgba(156, 163, 175, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            colorGraficaFinal
+                        ],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        // Configuración de Tooltips
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.y !== null) {
+                                        label += context.parsed.y;
+                                    }
+                                    return label;
+                                }
+                            }
+                        } 
+                    },
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    }
+                }
+            });
+        }
+
+        window.onload = cargarDatos;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('inputBoleta').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') buscarAlumno();
+            });
+        });
+    </script>
+</body>
+</html>
