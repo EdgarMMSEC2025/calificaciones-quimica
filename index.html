@@ -168,16 +168,17 @@
         let chartPracticasInstance = null;
         let chartDesgloseInstance = null;
 
+        // Se han corregido las prácticas 6, 7 y 8 para evitar repeticiones visuales
         const coloresBrillantes = [
-            '#5faae1', // Práctica 2
-            '#5fd6e1', // Práctica 3
-            '#5fe1ae', // Práctica 4
-            '#a85fe1', // Práctica 5
-            '#a85fe1', // Práctica 6
-            '#a85fe1', // Práctica 7
-            '#a85fe1', // Práctica 8
-            '#2637cb', // Práctica 9
-            '#2d9f1a'  // Práctica 10
+            '#5faae1', // Práctica 2 
+            '#5fd6e1', // Práctica 3 
+            '#5fe1ae', // Práctica 4 
+            '#a85fe1', // Práctica 5 
+            '#d65fe1', // Práctica 6 (Ajustado a tono magenta)
+            '#e15fa8', // Práctica 7 (Ajustado a tono rosa)
+            '#e15f5f', // Práctica 8 (Ajustado a tono rojo coral)
+            '#2637cb', // Práctica 9 
+            '#2d9f1a'  // Práctica 10 
         ];
 
         // 1. Cargar el JSON al iniciar la página
@@ -254,7 +255,6 @@
             document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
 
             // --- FUNCIÓN ROBUSTA DE EXTRACCIÓN ---
-            // Busca llaves sin importar si están en mayúsculas o minúsculas en el JSON
             const getVal = (obj, posiblesLlaves) => {
                 const llavesBuscadas = posiblesLlaves.map(k => k.toLowerCase());
                 for (let objKey in obj) {
@@ -264,29 +264,31 @@
                         }
                     }
                 }
-                return 0;
+                return 0; // Si no hay valor, retorna 0
             };
 
-            // Extracción buscando las llaves de tu data.json (promedio, PuntosTeoria, CalificacionFinal)
             const practicas = getVal(alumno, ['promedio', 'total', 'practicas']);
             const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria']);
             let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final']);
             
             if (final === 0 && (practicas > 0 || teoria > 0)) final = practicas + teoria;
 
-            // Extraer calificaciones individuales para la gráfica polar
+            // --- RECOLECCIÓN DE PUNTOS PARA LAS 9 PRÁCTICAS ---
+            // Se agregaron más posibles llaves para evitar que se pierdan datos como la práctica 10
             const puntajesPracticas = [
-                getVal(alumno, ['calificacion']),
-                getVal(alumno, ['calificacion9']),
-                getVal(alumno, ['calificacion10']),
-                getVal(alumno, ['calificacion11']),
-                getVal(alumno, ['calificacion12']),
-                getVal(alumno, ['calificacion13']),
-                getVal(alumno, ['calificacion14']),
-                getVal(alumno, ['calificacion15']),
-                getVal(alumno, ['calificacion16']) // Añadido para Práctica 10
+                getVal(alumno, ['calificacion', 'calificacion2', 'practica2']),
+                getVal(alumno, ['calificacion9', 'calificacion3', 'practica3']),
+                getVal(alumno, ['calificacion10', 'calificacion4', 'practica4']),
+                getVal(alumno, ['calificacion11', 'calificacion5', 'practica5']),
+                getVal(alumno, ['calificacion12', 'calificacion6', 'practica6']),
+                getVal(alumno, ['calificacion13', 'calificacion7', 'practica7']),
+                getVal(alumno, ['calificacion14', 'calificacion8', 'practica8']),
+                getVal(alumno, ['calificacion15', 'calificacion9', 'practica9']),
+                getVal(alumno, ['calificacion16', 'calificacion17', 'calificacion10', 'practica10']) // Búsqueda extendida para Práctica 10
             ];
-            const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; // Añadido para Práctica 10
+            
+            // 9 Etiquetas exactas
+            const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; 
 
             // --- ACTUALIZACIÓN DE TARJETAS ---
             document.getElementById('valor-practicas').textContent = practicas.toFixed(1);
@@ -337,7 +339,6 @@
                     },
                     plugins: { 
                         legend: { position: 'right' },
-                        // Configuración de Tooltips
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
@@ -380,7 +381,6 @@
                     maintainAspectRatio: false,
                     plugins: { 
                         legend: { display: false },
-                        // Configuración de Tooltips
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
