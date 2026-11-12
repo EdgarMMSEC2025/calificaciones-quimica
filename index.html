@@ -226,7 +226,7 @@
             '#2d9f1a'  // Práctica 10
         ];
 
-        // Mapeo ampliado de llaves para encontrar los desgloses sin errores
+        // Mapeo ampliado y seguro de llaves para encontrar los desgloses
         const llavesDesglose = [
             { prev: ['actprev', 'actprev2'], exp: ['labexp', 'labexp2'], bit: ['bitacora', 'bitacora2'], ext: ['ptosext', 'ptosext2'], calif: ['calificacion', 'calificacion2', 'practica2'] },
             { prev: ['actprev5', 'actprev3'], exp: ['labexp6', 'labexp3'], bit: ['bitacora7', 'bitacora3'], ext: ['ptosext2', 'ptosext3'], calif: ['calificacion9', 'calificacion3', 'practica3'] },
@@ -249,10 +249,9 @@
                 if (!response.ok) throw new Error("Error HTTP " + response.status);
                 alumnosData = await response.json();
             } catch (error) {
-                console.warn("Usando datos de prueba. En tu servidor funcionará con tu data.json.");
+                console.warn("Usando datos de prueba.");
                 alumnosData = [
-                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", actprev: "30", labexp: "20", bitacora: "30", ptosext: "0", calificacion: "80", actprev5: "30", labexp6: "20", bitacora7: "40", ptosext2: "0", calificacion9: "90", calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" },
-                    { boleta: "2026320893", nombre: "BELTRAN VELASQUEZ LUIS", grupo: "1IM21", TOTAL: 70, teoria: 1.7, final: 71.7 }
+                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", actprev: "30", labexp: "20", bitacora: "30", ptosext: "0", calificacion: "80", actprev5: "30", labexp6: "20", bitacora7: "40", ptosext2: "0", calificacion9: "90", calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" }
                 ];
             }
 
@@ -266,7 +265,7 @@
             });
         }
 
-        // 2. Búsqueda Robusta (Ignora mayúsculas y espacios extra)
+        // 2. Búsqueda
         function buscarAlumno() {
             const grupoSeleccionado = document.getElementById('selectGrupo').value.trim().toUpperCase();
             const boletaIngresada = document.getElementById('inputBoleta').value.trim().toUpperCase();
@@ -303,18 +302,16 @@
             }
         }
 
-        // Función de extracción indestructible (Quita espacios, acentos y convierte a minúsculas para comparar)
-        const getValRobust = (obj, posiblesLlaves) => {
-            const normalizar = (str) => String(str).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-            const llavesBuscadas = posiblesLlaves.map(normalizar);
-            
+        // Función de extracción (Simple y Segura)
+        const getVal = (obj, posiblesLlaves) => {
+            const llavesBuscadas = posiblesLlaves.map(k => k.trim().toLowerCase());
             for (let objKey in obj) {
-                if (llavesBuscadas.includes(normalizar(objKey))) {
+                if (llavesBuscadas.includes(objKey.trim().toLowerCase())) {
                     const val = parseFloat(obj[objKey]);
                     if (!isNaN(val)) return val;
                 }
             }
-            return 0; 
+            return 0;
         };
 
         // 3. Mostrar la información
@@ -326,11 +323,20 @@
             document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
 
             // Extracción de Teoría y Final
-            const teoria = getValRobust(alumno, ['puntosteoria', 'teoria', 'puntos_teoria', 'puntos teoria']);
-            let final = getValRobust(alumno, ['calificacionfinal', 'final', 'calificacion_final', 'calificacion final']);
+            const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria']);
+            let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final', 'TOTAL']);
 
-            // Recolección de calificaciones de las 9 prácticas 
-            const puntajesPracticas = llavesDesglose.map(llaves => getValRobust(alumno, llaves.calif));
+            // Recolección de calificaciones de las 9 prácticas asegurando la suma
+            const puntajesPracticas = llavesDesglose.map(llaves => {
+                let p_prev = getVal(alumno, llaves.prev);
+                let p_exp = getVal(alumno, llaves.exp);
+                let p_bit = getVal(alumno, llaves.bit);
+                let p_ext = getVal(alumno, llaves.ext);
+                let totalSuma = p_prev + p_exp + p_bit + p_ext;
+                
+                // Si la suma de desglose es mayor a 0, la usamos. Si no, usamos la llave general (ej. calificacion9)
+                return totalSuma > 0 ? totalSuma : getVal(alumno, llaves.calif);
+            });
             const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; 
 
             // Cálculo de prácticas aprobadas (>= 70)
@@ -339,8 +345,8 @@
                 if (calif >= 70) numPracticasAprobadas++;
             });
 
-            // Promedio General (Si el JSON lo tiene, se usa, sino se calcula para las barras)
-            let promedioOriginal = getValRobust(alumno, ['promedio', 'total', 'practicas', 'totalpracticas']);
+            // Promedio General
+            let promedioOriginal = getVal(alumno, ['promedio', 'total', 'practicas']);
             if (final === 0 && (promedioOriginal > 0 || teoria > 0)) final = promedioOriginal + teoria;
 
             // Actualización del HTML
@@ -429,14 +435,15 @@
             const tituloPractica = `Práctica ${indice + 2}`;
             const colorPractica = coloresBrillantes[indice];
 
-            const actPrev = getValRobust(alumnoActual, llaves.prev);
-            const labExp = getValRobust(alumnoActual, llaves.exp);
-            const bitacora = getValRobust(alumnoActual, llaves.bit);
-            const ptosExt = getValRobust(alumnoActual, llaves.ext);
+            let actPrev = getVal(alumnoActual, llaves.prev);
+            let labExp = getVal(alumnoActual, llaves.exp);
+            let bitacora = getVal(alumnoActual, llaves.bit);
+            let ptosExt = getVal(alumnoActual, llaves.ext);
+            let califDir = getVal(alumnoActual, llaves.calif);
             
-            // La suma total. Si las 4 sub-categorías no vienen en el JSON pero la calificación sí, usamos la calificación directa.
-            let califTotal = actPrev + labExp + bitacora + ptosExt;
-            if (califTotal === 0) califTotal = getValRobust(alumnoActual, llaves.calif);
+            // La suma total. Si es 0 pero califDir tiene valor, usamos ese valor
+            let sumSub = actPrev + labExp + bitacora + ptosExt;
+            let califTotal = sumSub > 0 ? sumSub : califDir;
 
             const ctxIndividual = canvasChart.getContext('2d');
             if (chartIndividualInstance) chartIndividualInstance.destroy();
