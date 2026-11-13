@@ -226,17 +226,34 @@
             '#2d9f1a'  // Práctica 10
         ];
 
-        // Mapeo ampliado y seguro de llaves para encontrar los desgloses
+        // Función para limpiar textos (quita acentos, espacios extra y pasa a minúsculas)
+        const normalizeString = (str) => {
+            if (!str) return "";
+            return String(str).normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+        };
+
+        // Función generadora de posibles nombres de columnas para cada práctica
+        function generarLlaves(num, messyPrev, messyExp, messyBit, messyExt, messyCalif) {
+            return {
+                prev: [messyPrev, `actprev${num}`, `act previa ${num}`, `actividad previa ${num}`, `previa ${num}`, `actprev ${num}`],
+                exp:  [messyExp, `labexp${num}`, `lab exp ${num}`, `laboratorio ${num}`, `trabajo experimental ${num}`, `exp ${num}`, `labexp ${num}`],
+                bit:  [messyBit, `bitacora${num}`, `bitacora ${num}`, `bit ${num}`],
+                ext:  [messyExt, `ptosext${num}`, `puntos extra ${num}`, `puntos ext ${num}`, `ext ${num}`, `ptosext ${num}`],
+                calif:[messyCalif, `calificacion${num}`, `practica ${num}`, `practica${num}`, `calificacion ${num}`]
+            };
+        }
+
+        // Mapeo exhaustivo para detectar las columnas correctas desde Excel
         const llavesDesglose = [
-            { prev: ['actprev', 'actprev2'], exp: ['labexp', 'labexp2'], bit: ['bitacora', 'bitacora2'], ext: ['ptosext', 'ptosext2'], calif: ['calificacion', 'calificacion2', 'practica2'] },
-            { prev: ['actprev5', 'actprev3'], exp: ['labexp6', 'labexp3'], bit: ['bitacora7', 'bitacora3'], ext: ['ptosext2', 'ptosext3'], calif: ['calificacion9', 'calificacion3', 'practica3'] },
-            { prev: ['actprev6', 'actprev4'], exp: ['labexp7', 'labexp4'], bit: ['bitacora8', 'bitacora4'], ext: ['ptosext3', 'ptosext4'], calif: ['calificacion10', 'calificacion4', 'practica4'] },
-            { prev: ['actprev7', 'actprev5'], exp: ['labexp8', 'labexp5'], bit: ['bitacora9', 'bitacora5'], ext: ['ptosext4', 'ptosext5'], calif: ['calificacion11', 'calificacion5', 'practica5'] },
-            { prev: ['actprev8', 'actprev6'], exp: ['labexp9', 'labexp6'], bit: ['bitacora10', 'bitacora6'], ext: ['ptosext5', 'ptosext6'], calif: ['calificacion12', 'calificacion6', 'practica6'] },
-            { prev: ['actprev9', 'actprev7'], exp: ['labexp10', 'labexp7'], bit: ['bitacora11', 'bitacora7'], ext: ['ptosext6', 'ptosext7'], calif: ['calificacion13', 'calificacion7', 'practica7'] },
-            { prev: ['actprev10', 'actprev8'], exp: ['labexp11', 'labexp8'], bit: ['bitacora12', 'bitacora8'], ext: ['ptosext7', 'ptosext8'], calif: ['calificacion14', 'calificacion8', 'practica8'] },
-            { prev: ['actprev11', 'actprev9'], exp: ['labexp12', 'labexp9'], bit: ['bitacora13', 'bitacora9'], ext: ['ptosext8', 'ptosext9'], calif: ['calificacion15', 'calificacion9', 'practica9'] },
-            { prev: ['actprev12', 'actprev10'], exp: ['labexp13', 'labexp10'], bit: ['bitacora14', 'bitacora10'], ext: ['ptosext9', 'ptosext10'], calif: ['calificacion16', 'calificacion17', 'calificacion10', 'practica10'] }
+            generarLlaves(2, 'actprev', 'labexp', 'bitacora', 'ptosext', 'calificacion'),
+            generarLlaves(3, 'actprev5', 'labexp6', 'bitacora7', 'ptosext2', 'calificacion9'),
+            generarLlaves(4, 'actprev6', 'labexp7', 'bitacora8', 'ptosext3', 'calificacion10'),
+            generarLlaves(5, 'actprev7', 'labexp8', 'bitacora9', 'ptosext4', 'calificacion11'),
+            generarLlaves(6, 'actprev8', 'labexp9', 'bitacora10', 'ptosext5', 'calificacion12'),
+            generarLlaves(7, 'actprev9', 'labexp10', 'bitacora11', 'ptosext6', 'calificacion13'),
+            generarLlaves(8, 'actprev10', 'labexp11', 'bitacora12', 'ptosext7', 'calificacion14'),
+            generarLlaves(9, 'actprev11', 'labexp12', 'bitacora13', 'ptosext8', 'calificacion15'),
+            generarLlaves(10, 'actprev12', 'labexp13', 'bitacora14', 'ptosext9', 'calificacion16')
         ];
 
         // 1. Cargar el JSON
@@ -251,7 +268,7 @@
             } catch (error) {
                 console.warn("Usando datos de prueba.");
                 alumnosData = [
-                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", PuntosTeoria: "10", CalificacionFinal: "94", actprev: "30", labexp: "20", bitacora: "30", ptosext: "0", calificacion: "80", actprev5: "30", labexp6: "20", bitacora7: "40", ptosext2: "0", calificacion9: "90", calificacion10: "85", calificacion11: "100", calificacion12: "70", calificacion13: "80", calificacion14: "85", calificacion15: "90", calificacion16: "95" }
+                    { boleta: "2026320395", nombre: "AREVALO ALCALA DYLAN EDUARDO", grupo: "1PM12", promedio: "84", "Puntos Teoria": "10", "Calificacion Final": "94", "Actividad Previa 2": "30", "Trabajo Experimental 2": "20", "Bitacora 2": "30", "Puntos Extra 2": "5", "Practica 2": "85", "Practica 3": "90", "Practica 4": "85", "Practica 5": "100", "Practica 6": "70", "Practica 7": "80", "Practica 8": "85", "Practica 9": "90", "Practica 10": "95" }
                 ];
             }
 
@@ -302,11 +319,11 @@
             }
         }
 
-        // Función de extracción (Simple y Segura)
+        // Función de extracción Ultra Robusta
         const getVal = (obj, posiblesLlaves) => {
-            const llavesBuscadas = posiblesLlaves.map(k => k.trim().toLowerCase());
+            const llavesBuscadas = posiblesLlaves.map(normalizeString);
             for (let objKey in obj) {
-                if (llavesBuscadas.includes(objKey.trim().toLowerCase())) {
+                if (llavesBuscadas.includes(normalizeString(objKey))) {
                     const val = parseFloat(obj[objKey]);
                     if (!isNaN(val)) return val;
                 }
@@ -322,9 +339,9 @@
             document.getElementById('info-boleta').textContent = `Boleta: ${alumno.boleta || 'N/A'}`;
             document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || 'N/A'}`;
 
-            // Extracción de Teoría y Final
-            const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria']);
-            let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final', 'TOTAL']);
+            // Extracción de Teoría y Final con variaciones comunes
+            const teoria = getVal(alumno, ['puntosteoria', 'teoria', 'puntos_teoria', 'puntos teoria']);
+            let final = getVal(alumno, ['calificacionfinal', 'final', 'calificacion_final', 'calificacion final', 'total']);
 
             // Recolección de calificaciones de las 9 prácticas asegurando la suma
             const puntajesPracticas = llavesDesglose.map(llaves => {
@@ -334,7 +351,7 @@
                 let p_ext = getVal(alumno, llaves.ext);
                 let totalSuma = p_prev + p_exp + p_bit + p_ext;
                 
-                // Si la suma de desglose es mayor a 0, la usamos. Si no, usamos la llave general (ej. calificacion9)
+                // Si la suma de desglose es mayor a 0, la usamos. Si no, usamos la llave general (ej. Practica 2)
                 return totalSuma > 0 ? totalSuma : getVal(alumno, llaves.calif);
             });
             const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; 
@@ -346,7 +363,7 @@
             });
 
             // Promedio General
-            let promedioOriginal = getVal(alumno, ['promedio', 'total', 'practicas']);
+            let promedioOriginal = getVal(alumno, ['promedio', 'total', 'practicas', 'promedio practicas', 'total practicas']);
             if (final === 0 && (promedioOriginal > 0 || teoria > 0)) final = promedioOriginal + teoria;
 
             // Actualización del HTML
@@ -441,7 +458,7 @@
             let ptosExt = getVal(alumnoActual, llaves.ext);
             let califDir = getVal(alumnoActual, llaves.calif);
             
-            // La suma total. Si es 0 pero califDir tiene valor, usamos ese valor
+            // La suma total. Si es 0 pero califDir tiene valor, usamos ese valor para mostrar la barra total al menos.
             let sumSub = actPrev + labExp + bitacora + ptosExt;
             let califTotal = sumSub > 0 ? sumSub : califDir;
 
