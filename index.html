@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones | Lab. de Química</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academico: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            600: '#0284c7',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        /* Animación para las gráficas interactivas */
+        @keyframes fadeInScale {
+            0% { opacity: 0; transform: scale(0.95); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-scale {
+            animation: fadeInScale 0.4s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Encabezado -->
+    <header class="bg-academico-800 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold flex items-center gap-3">
+                <i class="fas fa-flask text-academico-100"></i>
+                Consulta de Calificaciones - Laboratorio de Química
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-8 w-full">
+        
+        <!-- Tarjeta de Búsqueda -->
+        <div class="glass-effect p-6 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4"><i class="fas fa-search mr-2"></i>Buscar Alumno</h2>
+            <div class="flex flex-col md:flex-row gap-6 items-end">
+                
+                <!-- 1. Seleccionar Grupo -->
+                <div class="w-full md:w-1/3">
+                    <label class="block text-sm font-bold text-gray-600 mb-2">1. Selecciona el Grupo:</label>
+                    <div class="relative">
+                        <i class="fas fa-users absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <select id="selectGrupo" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm appearance-none bg-white">
+                            <option value="">Elegir grupo...</option>
+                        </select>
+                        <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                    </div>
+                </div>
+
+                <!-- 2. Ingresar Boleta -->
+                <div class="w-full md:w-1/3">
+                    <label class="block text-sm font-bold text-gray-600 mb-2">2. Ingresa la Boleta:</label>
+                    <div class="relative">
+                        <i class="fas fa-id-card absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="inputBoleta" 
+                               class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm" 
+                               placeholder="Ej. 2026320893 o PP27000983">
+                    </div>
+                </div>
+
+                <!-- Botón de Búsqueda -->
+                <div class="w-full md:w-1/3">
+                    <button onclick="buscarAlumno()" 
+                            class="w-full bg-academico-600 hover:bg-academico-800 text-white py-3 rounded-xl font-bold shadow-md transition-all duration-300 flex items-center justify-center gap-2">
+                        Consultar Calificación
+                    </button>
+                </div>
+            </div>
+            <div id="error-msg" class="text-red-500 font-medium mt-4 hidden flex items-center gap-2 bg-red-50 p-3 rounded-lg border border-red-200">
+                <i class="fas fa-exclamation-circle"></i> Mensaje de error aquí.
+            </div>
+        </div>
+
+        <!-- Área de Resultados -->
+        <div id="resultados" class="hidden animate-fade-in-up">
+            
+            <!-- Encabezado del Estudiante -->
+            <div class="mb-4">
+                <h2 id="info-nombre" class="text-3xl font-bold text-gray-800 uppercase tracking-wide"></h2>
+                <div class="flex flex-wrap gap-4 mt-2 text-gray-600 font-medium border-b pb-4">
+                    <span id="info-boleta" class="bg-gray-200 px-3 py-1 rounded-md text-sm"></span>
+                    <span id="info-grupo" class="bg-academico-100 text-academico-800 px-3 py-1 rounded-md text-sm"></span>
+                    <span id="info-reprobadas" class="px-3 py-1 rounded-md text-sm font-semibold"></span>
+                </div>
+            </div>
+
+            <!-- Mensaje de Estado (Acreditado / No Acreditado) -->
+            <div id="mensaje-estado" class="hidden mb-6"></div>
+
+            <!-- Tarjetas Resumen -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- Tarjeta: Total Prácticas Aprobadas -->
+                <div id="card-practicas" class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-gray-400 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Total Prácticas Aprobadas</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-practicas" class="text-5xl font-black text-gray-700">-</span>
+                        <span class="text-xl font-bold opacity-70"> / 9</span>
+                    </div>
+                    <p id="subtexto-practicas" class="text-xs text-gray-500 mt-2 font-medium"></p>
+                </div>
+                
+                <!-- Tarjeta: Puntos de Teoría -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-purple-500 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between">
+                    <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Puntos de Teoría</h3>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-teoria" class="text-5xl font-black text-purple-700">-</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Aportación teórica</p>
+                </div>
+
+                <!-- Tarjeta: Calificación Final -->
+                <div id="card-final" class="glass-effect p-6 rounded-2xl shadow-md border-l-8 transition-all hover:-translate-y-1 duration-300 flex flex-col justify-between">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-gray-500 text-sm font-bold uppercase tracking-widest mb-2">Calificación Final</h3>
+                        <span id="badge-estatus" class="text-xs font-extrabold uppercase px-2.5 py-1 rounded-full"></span>
+                    </div>
+                    <div class="flex items-baseline gap-2">
+                        <span id="valor-final" class="text-6xl font-black drop-shadow-sm">-</span>
+                        <span class="text-xl font-bold opacity-70">/ 100</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficas Principales -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <!-- Gráfica 1: Prácticas (Polar Area) -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-700 mb-6 border-b pb-2">Calificaciones por Práctica (Mín. aprobatoria: 70)</h3>
+                    <div class="relative h-80 w-full flex justify-center">
+                        <canvas id="chartPracticas"></canvas>
+                    </div>
+                </div>
+
+                <!-- Gráfica 2: Desglose Final (Barras) -->
+                <div class="glass-effect p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-lg font-bold text-gray-700 mb-6 border-b pb-2">Desglose Final</h3>
+                    <div class="relative h-80 w-full">
+                        <canvas id="chartDesglose"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selector de Desglose de Práctica -->
+            <div class="glass-effect p-6 rounded-2xl shadow-sm mb-8 animate-fade-scale">
+                <h3 class="text-lg font-bold text-gray-700 mb-4 border-b pb-2">Ver Desglose de Práctica Individual</h3>
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3">
+                        <div class="relative">
+                            <i class="fas fa-list absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                            <select id="selectDesglose" onchange="mostrarDesglosePractica()" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-academico-600 outline-none transition-all shadow-sm appearance-none bg-white font-medium text-gray-700">
+                                <option value="" disabled selected>Selecciona una práctica...</option>
+                                <option value="0">Práctica 2</option>
+                                <option value="1">Práctica 3</option>
+                                <option value="2">Práctica 4</option>
+                                <option value="3">Práctica 5</option>
+                                <option value="4">Práctica 6</option>
+                                <option value="5">Práctica 7</option>
+                                <option value="6">Práctica 8</option>
+                                <option value="7">Práctica 9</option>
+                                <option value="8">Práctica 10</option>
+                            </select>
+                            <i class="fas fa-chevron-down absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenedor del Gráfico de Desglose -->
+                    <div class="w-full md:w-2/3 h-64 relative" id="contenedorChartIndividual">
+                        <!-- Mensaje Inicial -->
+                        <div id="mensajePlaceholderDesglose" class="absolute inset-0 flex items-center justify-center text-gray-400 italic">
+                            Selecciona una práctica para ver sus rubros calificados
+                        </div>
+                        <canvas id="chartIndividual" class="hidden"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Lógica de la Aplicación -->
+    <script>
+        let alumnosData = [];
+        let alumnoActual = null; 
+        let chartPracticasInstance = null;
+        let chartDesgloseInstance = null;
+        let chartIndividualInstance = null;
+
+        // Paleta de colores para cada práctica
+        const coloresBrillantes = [
+            '#5faae1', // Práctica 2
+            '#5fd6e1', // Práctica 3
+            '#5fe1ae', // Práctica 4
+            '#38bdf8', // Práctica 5
+            '#818cf8', // Práctica 6
+            '#a85fe1', // Práctica 7
+            '#ec4899', // Práctica 8
+            '#2637cb', // Práctica 9
+            '#2d9f1a'  // Práctica 10
+        ];
+
+        // Función para limpiar textos
+        const normalizeString = (str) => {
+            if (!str) return "";
+            return String(str).normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+        };
+
+        // Función generadora de posibles nombres de columnas (compatible con data.json, data_2.json y data_3.json)
+        function generarLlaves(num, messyPrev, messyExp, messyBit, messyExt, messyCalifOld) {
+            return {
+                prev: [messyPrev, `actprev${num}`, `act previa ${num}`, `actividad previa ${num}`],
+                exp:  [messyExp, `labexp${num}`, `lab exp ${num}`, `trabajo experimental ${num}`],
+                bit:  [messyBit, `bitacora${num}`, `bitacora ${num}`],
+                ext:  [messyExt, `ptosext${num}`, `puntos extra ${num}`],
+                calif:[`calificacion_${num}`, `calificacion${num}`, messyCalifOld, `practica ${num}`, `practica${num}`]
+            };
+        }
+
+        // Mapeo exacto adaptado a las columnas de data_3.json y versiones anteriores
+        const llavesDesglose = [
+            generarLlaves(2,  'actprev',   'labexp',   'bitacora',   'ptosext',  'calificacion'),   // Práctica 2 -> calificacion_2
+            generarLlaves(3,  'actprev5',  'labexp6',  'bitacora7',  'ptosext2', 'calificacion9'),  // Práctica 3 -> calificacion_3
+            generarLlaves(4,  'actprev6',  'labexp7',  'bitacora8',  'ptosext3', 'calificacion10'), // Práctica 4 -> calificacion_4
+            generarLlaves(5,  'actprev7',  'labexp8',  'bitacora9',  'ptosext4', 'calificacion11'), // Práctica 5 -> calificacion_5
+            generarLlaves(6,  'actprev8',  'labexp9',  'bitacora10', 'ptosext5', 'calificacion12'), // Práctica 6 -> calificacion_6
+            generarLlaves(7,  'actprev9',  'labexp10', 'bitacora11', 'ptosext6', 'calificacion13'), // Práctica 7 -> calificacion_7
+            generarLlaves(8,  'actprev10', 'labexp11', 'bitacora12', 'ptosext7', 'calificacion14'), // Práctica 8 -> calificacion_8
+            generarLlaves(9,  'actprev2',  'labexp3',  'bitacora4',  'ptosext8', 'calificacion6'),  // Práctica 9 -> calificacion_9
+            generarLlaves(10, 'actprev3',  'labexp4',  'bitacora5',  'ptosext9', 'calificacion7')   // Práctica 10 -> calificacion_10
+        ];
+
+        // 1. Cargar el JSON (prioriza data_3.json, luego data.json y data_2.json)
+        async function cargarDatos() {
+            const archivos = ['data_3.json', 'data.json', 'data_2.json'];
+            let cargado = false;
+
+            for (const archivo of archivos) {
+                try {
+                    const response = await fetch(archivo);
+                    if (response.ok) {
+                        alumnosData = await response.json();
+                        cargado = true;
+                        break;
+                    }
+                } catch (e) {
+                    // Continuar con el siguiente archivo
+                }
+            }
+
+            if (!cargado) {
+                console.warn("No se pudo cargar el archivo JSON localmente, usando datos de muestra.");
+                alumnosData = [
+                    {
+                        "boleta": "PP27000983", "nombre": "ANGELES RODRIGUEZ ALONDRA DANNAE", "grupo": "1PM12",
+                        "actprev": "24", "labexp": "20", "bitacora": "50", "ptosext": "0", "calificacion_2": "94",
+                        "actprev5": "30", "labexp6": "20", "bitacora7": "50", "ptosext2": "0", "calificacion_3": "100",
+                        "actprev6": "30", "labexp7": "20", "bitacora8": "50", "ptosext3": "0", "calificacion_4": "100",
+                        "actprev7": "30", "labexp8": "20", "bitacora9": "45", "ptosext4": "0", "calificacion_5": "95",
+                        "actprev8": "30", "labexp9": "20", "bitacora10": "50", "ptosext5": "0", "calificacion_6": "100",
+                        "actprev9": "30", "labexp10": "0", "bitacora11": "50", "ptosext6": "0", "calificacion_7": "80",
+                        "actprev10": "30", "labexp11": "20", "bitacora12": "45", "ptosext7": "0", "calificacion_8": "95",
+                        "actprev2": "30", "labexp3": "20", "bitacora4": "50", "ptosext8": "0", "calificacion_9": "100",
+                        "actprev3": "30", "labexp4": "20", "bitacora5": "50", "ptosext9": "0", "calificacion_10": "100",
+                        "calificacion_final": "95", "puntos_teoria": "1.9"
+                    },
+                    {
+                        "boleta": "2026320893", "nombre": "BELTRAN VELASQUEZ LUIS", "grupo": "1IM21",
+                        "actprev": "30", "labexp": "20", "bitacora": "50", "ptosext": "0", "calificacion_2": "100",
+                        "actprev5": "30", "labexp6": "20", "bitacora7": "50", "ptosext2": "0", "calificacion_3": "100",
+                        "actprev6": "0", "labexp7": "0", "bitacora8": "20", "ptosext3": "0", "calificacion_4": "20",
+                        "actprev7": "30", "labexp8": "20", "bitacora9": "50", "ptosext4": "0", "calificacion_5": "100",
+                        "actprev8": "30", "labexp9": "0", "bitacora10": "50", "ptosext5": "0", "calificacion_6": "80",
+                        "actprev9": "30", "labexp10": "20", "bitacora11": "50", "ptosext6": "0", "calificacion_7": "100",
+                        "actprev10": "30", "labexp11": "20", "bitacora12": "40", "ptosext7": "0", "calificacion_8": "90",
+                        "actprev2": "30", "labexp3": "20", "bitacora4": "5", "ptosext8": "0", "calificacion_9": "55",
+                        "actprev3": "30", "labexp4": "20", "bitacora5": "35", "ptosext9": "0", "calificacion_10": "85",
+                        "calificacion_final": "81", "puntos_teoria": "1.6"
+                    }
+                ];
+            }
+
+            const selectGrupo = document.getElementById('selectGrupo');
+            const gruposSet = new Set();
+            alumnosData.forEach(a => { 
+                const grp = a.grupo || a.Grupo;
+                if(grp) gruposSet.add(String(grp).trim().toUpperCase()); 
+            });
+            Array.from(gruposSet).sort().forEach(g => {
+                const option = document.createElement('option');
+                option.value = g; option.textContent = g;
+                selectGrupo.appendChild(option);
+            });
+        }
+
+        // 2. Búsqueda
+        function buscarAlumno() {
+            const grupoSeleccionado = document.getElementById('selectGrupo').value.trim().toUpperCase();
+            const boletaIngresada = document.getElementById('inputBoleta').value.trim().toUpperCase();
+            const errorMsg = document.getElementById('error-msg');
+            const resultadosArea = document.getElementById('resultados');
+
+            if (!grupoSeleccionado || !boletaIngresada) {
+                errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> Selecciona un grupo e ingresa una boleta.';
+                errorMsg.classList.remove('hidden');
+                resultadosArea.classList.add('hidden');
+                return;
+            }
+
+            const alumno = alumnosData.find(a => {
+                const grp = a.grupo || a.Grupo;
+                const bol = a.boleta || a.Boleta;
+                return (grp && String(grp).trim().toUpperCase() === grupoSeleccionado) && 
+                       (bol && String(bol).trim().toUpperCase() === boletaIngresada);
+            });
+
+            if (alumno) {
+                errorMsg.classList.add('hidden');
+                alumnoActual = alumno; 
+                
+                // Reiniciar el selector de desglose
+                document.getElementById('selectDesglose').value = "";
+                document.getElementById('mensajePlaceholderDesglose').classList.remove('hidden');
+                document.getElementById('chartIndividual').classList.add('hidden');
+
+                mostrarResultados(alumno);
+            } else {
+                errorMsg.innerHTML = '<i class="fas fa-exclamation-circle"></i> No se encontró ningún alumno. Verifica tus datos.';
+                errorMsg.classList.remove('hidden');
+                resultadosArea.classList.add('hidden');
+                alumnoActual = null;
+            }
+        }
+
+        // Función de extracción exacta
+        const getVal = (obj, posiblesLlaves) => {
+            const llavesBuscadas = posiblesLlaves.map(normalizeString);
+            for (let objKey in obj) {
+                if (llavesBuscadas.includes(normalizeString(objKey))) {
+                    const val = parseFloat(obj[objKey]);
+                    if (!isNaN(val)) return val;
+                }
+            }
+            return 0;
+        };
+
+        // 3. Mostrar la información
+        function mostrarResultados(alumno) {
+            document.getElementById('resultados').classList.remove('hidden');
+            
+            document.getElementById('info-nombre').textContent = alumno.nombre || alumno.Nombre || 'Nombre no registrado';
+            document.getElementById('info-boleta').textContent = `Boleta: ${alumno.boleta || alumno.Boleta || 'N/A'}`;
+            document.getElementById('info-grupo').textContent = `Grupo: ${alumno.grupo || alumno.Grupo || 'N/A'}`;
+
+            // Extracción de Teoría y Final
+            const teoria = getVal(alumno, ['puntos_teoria', 'puntosteoria', 'teoria', 'puntos teoria']);
+            let final = getVal(alumno, ['calificacion_final', 'calificacionfinal', 'final', 'calificacion final']);
+
+            // Recolección de calificaciones de las 9 prácticas
+            const puntajesPracticas = llavesDesglose.map(llaves => {
+                // Priorizar la calificación directa de la columna (ej. calificacion_2) si existe
+                let califDirecta = getVal(alumno, llaves.calif);
+                let p_prev = getVal(alumno, llaves.prev);
+                let p_exp = getVal(alumno, llaves.exp);
+                let p_bit = getVal(alumno, llaves.bit);
+                let p_ext = getVal(alumno, llaves.ext);
+                let totalSuma = p_prev + p_exp + p_bit + p_ext;
+                
+                return califDirecta > 0 || totalSuma === 0 ? califDirecta : totalSuma;
+            });
+
+            const etiquetasPracticas = ['Prác. 2', 'Prác. 3', 'Prác. 4', 'Prác. 5', 'Prác. 6', 'Prác. 7', 'Prác. 8', 'Prác. 9', 'Prác. 10']; 
+
+            // Cálculo de prácticas aprobadas (>= 70) y reprobadas (< 70)
+            let numPracticasAprobadas = 0;
+            let numPracticasReprobadas = 0;
+            let practicasReprobadasNombres = [];
+
+            puntajesPracticas.forEach((calif, idx) => {
+                if (calif >= 70) {
+                    numPracticasAprobadas++;
+                } else {
+                    numPracticasReprobadas++;
+                    practicasReprobadasNombres.push(`Práctica ${idx + 2} (${calif})`);
+                }
+            });
+
+            // Promedio de las 9 prácticas
+            const sumaPracticas = puntajesPracticas.reduce((acc, val) => acc + val, 0);
+            let promedioPracticas = getVal(alumno, ['promedio', 'promedio practicas']);
+            if (promedioPracticas === 0 && sumaPracticas > 0) {
+                promedioPracticas = parseFloat((sumaPracticas / 9).toFixed(1));
+            }
+
+            // Actualización de tarjetas superiores
+            document.getElementById('valor-practicas').textContent = numPracticasAprobadas; 
+            document.getElementById('valor-teoria').textContent = teoria.toFixed(1);
+            
+            const infoReprobadasBadge = document.getElementById('info-reprobadas');
+            const subtextoPracticas = document.getElementById('subtexto-practicas');
+            const cardPracticas = document.getElementById('card-practicas');
+
+            if (numPracticasReprobadas >= 2) {
+                infoReprobadasBadge.className = "bg-red-100 text-red-800 px-3 py-1 rounded-md text-sm font-bold border border-red-200";
+                infoReprobadasBadge.innerHTML = `<i class="fas fa-times-circle mr-1"></i> ${numPracticasReprobadas} sesiones reprobadas`;
+                subtextoPracticas.textContent = `Reprobadas (<70): ${numPracticasReprobadas} sesiones (Límite permitido: 1)`;
+                subtextoPracticas.className = "text-xs text-red-600 mt-2 font-bold";
+                cardPracticas.className = "glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-red-500 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between";
+            } else if (numPracticasReprobadas === 1) {
+                infoReprobadasBadge.className = "bg-amber-100 text-amber-800 px-3 py-1 rounded-md text-sm font-semibold border border-amber-200";
+                infoReprobadasBadge.innerHTML = `<i class="fas fa-exclamation-triangle mr-1"></i> 1 sesión reprobada`;
+                subtextoPracticas.textContent = `1 sesión reprobada (<70)`;
+                subtextoPracticas.className = "text-xs text-amber-600 mt-2 font-medium";
+                cardPracticas.className = "glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-amber-400 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between";
+            } else {
+                infoReprobadasBadge.className = "bg-green-100 text-green-800 px-3 py-1 rounded-md text-sm font-semibold border border-green-200";
+                infoReprobadasBadge.innerHTML = `<i class="fas fa-check-circle mr-1"></i> 0 sesiones reprobadas`;
+                subtextoPracticas.textContent = `Todas las sesiones aprobadas (>=70)`;
+                subtextoPracticas.className = "text-xs text-green-600 mt-2 font-medium";
+                cardPracticas.className = "glass-effect p-6 rounded-2xl shadow-sm border-l-8 border-green-500 transition-transform hover:-translate-y-1 duration-300 flex flex-col justify-between";
+            }
+
+            // Regla de Acreditación estricta:
+            // Se requiere calificación final >= 80 Y estrictamente menos de 2 prácticas reprobadas (< 70)
+            const repruebaPorSesiones = numPracticasReprobadas >= 2;
+            const repruebaPorPromedio = final < 80;
+            const estaAcreditado = !repruebaPorSesiones && !repruebaPorPromedio;
+
+            const cardFinal = document.getElementById('card-final');
+            const valorFinal = document.getElementById('valor-final');
+            const badgeEstatus = document.getElementById('badge-estatus');
+            const mensajeEstado = document.getElementById('mensaje-estado');
+            
+            valorFinal.textContent = final.toFixed(1);
+
+            let colorGraficaFinal = '';
+            
+            if (!estaAcreditado) {
+                // NO ACREDITADO
+                valorFinal.className = "text-6xl font-black text-red-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-red-600 bg-red-50 flex flex-col justify-between";
+                badgeEstatus.className = "text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-red-600 text-white shadow-sm";
+                badgeEstatus.textContent = "NO ACREDITADO";
+                colorGraficaFinal = 'rgba(220, 38, 38, 0.85)';
+
+                // Construir motivo detallado de no acreditación
+                let motivos = [];
+                if (repruebaPorSesiones) {
+                    motivos.push(`reprobaste <strong>${numPracticasReprobadas} sesiones</strong> con calificación menor a 70 (${practicasReprobadasNombres.join(', ')})`);
+                }
+                if (repruebaPorPromedio) {
+                    motivos.push(`tu calificación final (${final.toFixed(1)}) es menor a 80`);
+                }
+
+                mensajeEstado.className = "mb-6 p-5 rounded-xl shadow-sm flex items-start gap-4 bg-red-50 text-red-900 border-2 border-red-300 animate-fade-in-up";
+                mensajeEstado.innerHTML = `
+                    <i class="fas fa-times-circle text-3xl text-red-600 mt-0.5"></i>
+                    <div>
+                        <h4 class="font-extrabold text-lg uppercase tracking-wide text-red-700">Estatus: No Acreditado</h4>
+                        <p class="text-sm mt-1">No acreditaste el laboratorio debido a que ${motivos.join(' y además ')}.</p>
+                    </div>
+                `;
+                mensajeEstado.classList.remove('hidden');
+            } else {
+                // ACREDITADO
+                valorFinal.className = "text-6xl font-black text-blue-600 drop-shadow-sm";
+                cardFinal.className = "glass-effect p-6 rounded-2xl shadow-lg border-l-8 border-blue-500 bg-blue-50 flex flex-col justify-between";
+                badgeEstatus.className = "text-xs font-extrabold uppercase px-2.5 py-1 rounded-full bg-green-600 text-white shadow-sm";
+                badgeEstatus.textContent = "ACREDITADO";
+                colorGraficaFinal = 'rgba(37, 99, 235, 0.85)';
+                
+                mensajeEstado.className = "mb-6 p-4 rounded-xl shadow-sm flex items-center gap-3 font-bold text-lg bg-green-50 text-green-800 border border-green-300 animate-fade-in-up";
+                mensajeEstado.innerHTML = '<i class="fas fa-medal text-2xl text-green-600"></i><span>¡Felicidades! Has acreditado el laboratorio exitosamente.</span>';
+                mensajeEstado.classList.remove('hidden');
+            }
+
+            // Gráfica 1: Prácticas (Polar Area)
+            const ctxPracticas = document.getElementById('chartPracticas').getContext('2d');
+            if (chartPracticasInstance) chartPracticasInstance.destroy();
+            
+            // Colorear en rojo intenso las prácticas reprobadas (<70) para fácil identificación visual
+            const coloresBarrasPracticas = puntajesPracticas.map((val, idx) => 
+                val < 70 ? 'rgba(239, 68, 68, 0.85)' : coloresBrillantes[idx]
+            );
+
+            chartPracticasInstance = new Chart(ctxPracticas, {
+                type: 'polarArea',
+                data: {
+                    labels: etiquetasPracticas,
+                    datasets: [{
+                        label: 'Calificación',
+                        data: puntajesPracticas,
+                        backgroundColor: coloresBarrasPracticas,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: { r: { min: 0, max: 100, ticks: { stepSize: 20 } } },
+                    plugins: { legend: { position: 'right' } }
+                }
+            });
+
+            // Gráfica 2: Desglose Final (Barras)
+            const ctxDesglose = document.getElementById('chartDesglose').getContext('2d');
+            if (chartDesgloseInstance) chartDesgloseInstance.destroy();
+
+            chartDesgloseInstance = new Chart(ctxDesglose, {
+                type: 'bar',
+                data: {
+                    labels: ['Promedio Prácticas', 'Puntos Teoría', 'Calificación Final'],
+                    datasets: [{
+                        label: 'Puntos',
+                        data: [promedioPracticas, teoria, final],
+                        backgroundColor: ['rgba(156, 163, 175, 0.8)', 'rgba(168, 85, 247, 0.8)', colorGraficaFinal],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true, max: 100 } }
+                }
+            });
+        }
+
+        // 4. Función para Desglose Individual de cada Práctica
+        function mostrarDesglosePractica() {
+            const indice = parseInt(document.getElementById('selectDesglose').value);
+            if (isNaN(indice) || !alumnoActual) return;
+
+            document.getElementById('mensajePlaceholderDesglose').classList.add('hidden');
+            const canvasChart = document.getElementById('chartIndividual');
+            canvasChart.classList.remove('hidden');
+
+            const llaves = llavesDesglose[indice];
+            const tituloPractica = `Práctica ${indice + 2}`;
+            const colorPractica = coloresBrillantes[indice];
+
+            let actPrev = getVal(alumnoActual, llaves.prev);
+            let labExp = getVal(alumnoActual, llaves.exp);
+            let bitacora = getVal(alumnoActual, llaves.bit);
+            let ptosExt = getVal(alumnoActual, llaves.ext);
+            let califDir = getVal(alumnoActual, llaves.calif);
+            
+            let sumSub = actPrev + labExp + bitacora + ptosExt;
+            let califTotal = califDir > 0 || sumSub === 0 ? califDir : sumSub;
+            const colorTotal = califTotal < 70 ? 'rgba(220, 38, 38, 0.85)' : colorPractica;
+            const colorExtra = ptosExt < 0 ? 'rgba(239, 68, 68, 0.7)' : 'rgba(156, 163, 175, 0.6)';
+
+            const ctxIndividual = canvasChart.getContext('2d');
+            if (chartIndividualInstance) chartIndividualInstance.destroy();
+
+            chartIndividualInstance = new Chart(ctxIndividual, {
+                type: 'bar',
+                data: {
+                    labels: ['Act. Previa', 'Lab. Exp.', 'Bitácora', 'Puntos Ext.', 'Calificación Total'],
+                    datasets: [{
+                        label: 'Puntaje',
+                        data: [actPrev, labExp, bitacora, ptosExt, califTotal],
+                        backgroundColor: [
+                            'rgba(156, 163, 175, 0.6)', 
+                            'rgba(156, 163, 175, 0.6)', 
+                            'rgba(156, 163, 175, 0.6)', 
+                            colorExtra, 
+                            colorTotal
+                        ],
+                        borderColor: [
+                            'rgba(107, 114, 128, 1)', 
+                            'rgba(107, 114, 128, 1)', 
+                            'rgba(107, 114, 128, 1)', 
+                            ptosExt < 0 ? 'rgba(220, 38, 38, 1)' : 'rgba(107, 114, 128, 1)', 
+                            colorTotal
+                        ],
+                        borderWidth: 1,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        title: { 
+                            display: true, 
+                            text: `Desglose de ${tituloPractica} — ${califTotal >= 70 ? 'APROBADA' : 'REPROBADA (<70)'}`, 
+                            font: { size: 14 },
+                            color: califTotal >= 70 ? '#374151' : '#dc2626'
+                        }
+                    },
+                    scales: { 
+                        y: { 
+                            beginAtZero: true, 
+                            suggestedMin: ptosExt < 0 ? -15 : 0,
+                            max: 100 
+                        } 
+                    }
+                }
+            });
+        }
+
+        window.onload = cargarDatos;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('inputBoleta').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') buscarAlumno();
+            });
+        });
+    </script>
+</body>
+</html>
